@@ -29,7 +29,8 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-pose": "^4.0.8",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "@types/styled-components": "^4.1.18",

@@ -1,13 +1,13 @@
 import * as React from "react"
-import { ListTitleStyled } from "../../../components/list/list-title/list-title"
-import { ListSubtitleStyled } from "../../../components/list/list-subtitle/list-subtitle"
-import { ParagraphStyled } from "../../../components/pragraph/pragraph.style"
+import { ListTitleStyled } from "../../../list/list-title/list-title"
+import { ListSubtitleStyled } from "../../../list/list-subtitle/list-subtitle"
+import { ParagraphStyled } from "../../../pragraph/pragraph.style"
 import { useRef } from "react"
-import { useIsInView } from "../../../hooks/useIsinView"
+import { useIsInView } from "../../../../hooks/useIsinView"
 import posed from "react-pose"
-import { LiElemStyled } from "../../../components/list/li-elem/li-elem"
-import { UlList } from "../../../components/list/ul-list/ul-list.styled"
-import Viewport from "../../../components/viewport/viewport"
+import { LiElemStyled } from "../../../list/li-elem/li-elem"
+import { UlList } from "../../../list/ul-list/ul-list.styled"
+import Viewport from "../../../viewport/viewport"
 
 const LiAnimated = posed(LiElemStyled)({
   visible: {
@@ -37,21 +37,20 @@ const UlAnimated = posed(UlList)({
   },
 })
 
-const ServicesList = () => {
+const DevelopmentProcessList = () => {
   const listAnimationRef = useRef(null)
   const animateList = useIsInView(listAnimationRef)
   return (
     <Viewport height={"200vh"}>
-      <section>
-        <ListTitleStyled>We do</ListTitleStyled>
-        <ListSubtitleStyled>Fullstack Service</ListSubtitleStyled>
+      <section ref={listAnimationRef}>
+        <ListTitleStyled>How I work</ListTitleStyled>
+        <ListSubtitleStyled>Development process</ListSubtitleStyled>
         <UlAnimated
-          ref={listAnimationRef}
           staggerChildren={200}
           pose={animateList ? "visible" : "hidden"}
         >
           <LiAnimated key={"Practice"} duration={700}>
-            <h3>Frontend</h3>
+            <h3>Practice</h3>
             <ParagraphStyled>
               I’m a programmer who knows design. I know best practices from both
               worlds and combine them in frontend development and UX/XD. I work
@@ -61,7 +60,7 @@ const ServicesList = () => {
             </ParagraphStyled>
           </LiAnimated>
           <LiAnimated key={"Full Stack"} duration={700}>
-            <h3>Backend</h3>
+            <h3>Full Stack</h3>
             <ParagraphStyled>
               I am competent in backend technologies as well as frontend and
               design. I work equally well in a team or develop a project
@@ -69,7 +68,7 @@ const ServicesList = () => {
             </ParagraphStyled>
           </LiAnimated>
           <LiAnimated key={"Process"} duration={700}>
-            <h3>Design</h3>
+            <h3>Process</h3>
             <ParagraphStyled>
               Before starting to develop I make sure I understand the needs and
               requirements for the project. Therefore I ask a lot of questions
@@ -77,7 +76,7 @@ const ServicesList = () => {
             </ParagraphStyled>
           </LiAnimated>
           <LiAnimated key={"Prototyping"} duration={700}>
-            <h3>DevOps</h3>
+            <h3>Prototyping</h3>
             <ParagraphStyled>
               After understanding all requirements I sketch out the first design
               and test it for functionality. Then I create a quick prototype. I
@@ -89,4 +88,4 @@ const ServicesList = () => {
     </Viewport>
   )
 }
-export default ServicesList
+export default DevelopmentProcessList

@@ -8,14 +8,16 @@ import { useMappedValue } from "../hooks/useMapedValue"
 import Opacity from "../components/opacity/opacity"
 import useWindowDimensions from "../hooks/useWindowDimensions"
 import Layout from "../components/layout/layout"
-import Header from "../components/header/header"
-import DevelopmentProcessList from "./start/development-process-list/development-process-list"
-import HeaderLogo from "../components/header/header-logo/header-logo"
-import ServicesList from "./start/services-list/services-list"
+import Header, { HeaderType } from "../components/header/header"
+import ServicesList from "../components/page-components/start/services-list/services-list"
+import AppearAnimation from "../animations/appear.animation"
+import { ParagraphStyled } from "../components/pragraph/pragraph.style"
+import StartPageFooter from "../components/page-components/start/footer/start-page-footer"
+import useScrollPosition from "../hooks/useScrollPosition"
 
 const StartPage = () => {
   const windowDimensions = useWindowDimensions()
-  // const scrollPosition = useScrollPosition()
+  const scrollPosition = useScrollPosition()
   const mappedOpacityValue = useMappedValue(
     1,
     0,
@@ -26,7 +28,7 @@ const StartPage = () => {
   return (
     <div>
       <SEO title="Home" />
-      <Header />
+      <Header type={HeaderType.white} />
 
       <Layout>
         <section>
@@ -34,19 +36,33 @@ const StartPage = () => {
             <Sticky top={"200px"}>
               <Align position={"center"}>
                 <Opacity opacity={mappedOpacityValue}>
-                  <PageTitle
-                    url={
-                      "https://media.giphy.com/media/3o6ZtrcBDLanIMbdRe/source.gif"
-                    }
-                  >
+                  <AppearAnimation duration={1000} delay={700}>
+                    <PageTitle
+                      url={
+                        "https://media.giphy.com/media/3o6ZtrcBDLanIMbdRe/source.gif"
+                      }
+                    >
+                      <div>
+                        Unique <br /> Web Solutions
+                      </div>
+                    </PageTitle>
+                  </AppearAnimation>
+                  <AppearAnimation duration={1000} delay={1200}>
                     <div
                       style={{
-                        textAlign: "left",
+                        margin: "0 auto",
+                        maxWidth: "670px",
                       }}
                     >
-                      Custom <br /> Web Development
+                      <ParagraphStyled>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Explicabo, ratione, reiciendis. Amet animi at
+                        culpa cupiditate, debitis dicta dolorem esse iste,
+                        nesciunt nihil omnis provident quae quaerat, soluta
+                        ullam vero?
+                      </ParagraphStyled>
                     </div>
-                  </PageTitle>
+                  </AppearAnimation>
                 </Opacity>
               </Align>
             </Sticky>
@@ -54,6 +70,7 @@ const StartPage = () => {
         </section>
         <ServicesList />
       </Layout>
+      <StartPageFooter />
     </div>
   )
 }

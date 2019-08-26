@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { HeaderType } from "./header"
 
 export const NavStyled = styled.nav`
   position: sticky;
@@ -6,15 +7,14 @@ export const NavStyled = styled.nav`
   left: 0;
   width: 100%;
   height: 55px;
-  min-width: 1024px;
   z-index: 9997;
-  &:after {
-    content: " ";
-    border-bottom: 1px solid #eaeaea;
-    position: absolute;
-    width: 100%;
-    top: 55px;
-  }
+  //&:after {
+  //  content: " ";
+  //  border-bottom: 1px solid #eaeaea;
+  //  position: absolute;
+  //  width: 100%;
+  //  top: 55px;
+  //}
 `
 export const HeaderWrapper = styled.div`
   position: absolute;
@@ -26,10 +26,10 @@ export const HeaderWrapper = styled.div`
   z-index: 1;
 `
 
-export const HeaderBackground = styled.div`
+export const HeaderBackground = styled.div<{type: HeaderType}>`
   transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
   backdrop-filter: saturate(180%) blur(20px);
-  background-color: #ffffffb3;
+  background-color: ${({type})=> type == HeaderType.black ? '#000000c9' : '#ffffffb3'};
   transition-property: background-color, backdrop-filter,
     -webkit-backdrop-filter;
   position: absolute;

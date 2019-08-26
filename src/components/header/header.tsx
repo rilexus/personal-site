@@ -1,5 +1,4 @@
 import * as React from "react"
-import { ReactNode } from "react"
 import {
   HeaderBackground,
   HeaderContent,
@@ -18,26 +17,32 @@ const Flex = styled.div`
   align-items: center;
 `
 
-const LinksWrapper = styled.div`
+const LinksWrapper = styled.div<{ type: HeaderType }>`
   a {
     text-decoration: none;
-    color: #2b2b2b;
+
+    color: ${({ type }) => (type === HeaderType.white ? "#2b2b2b" : "white")};
     margin-right: 20px;
   }
 `
-
-interface HeaderPropsI {}
-const Header = ({  }: HeaderPropsI) => {
+export enum HeaderType {
+  black = "black",
+  white = "white",
+}
+interface HeaderPropsI {
+  type: HeaderType
+}
+const Header = ({ type }: HeaderPropsI) => {
   return (
     <NavStyled key={"header"}>
       <HeaderWrapper>
-        <HeaderBackground />
+        <HeaderBackground type={type} />
         <HeaderContent>
           <Flex>
             <div>
               <HeaderLogo />
             </div>
-            <LinksWrapper>
+            <LinksWrapper type={type}>
               <Link to={"/bio"}>Bio</Link>
               <Link to={"/portfolio"}>Portfolio</Link>
               <Link to={"/client"}>Clients</Link>

@@ -6,7 +6,7 @@ interface PropsI {
 
 export const PageTitleStyled = styled.h2`
   font-weight: 900;
-  font-size: 6rem;
+  font-size: 5rem;
   display: inline-block;
   
   background-image: url(${({url}:PropsI)=>url});

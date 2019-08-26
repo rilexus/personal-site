@@ -7,7 +7,8 @@ import useTimeout from "./useTimeout"
  * @return {boolean}
  */
 export default function useSignal(delay) {
-  const [value, setValue] = useState(false) // init value: false
-  useTimeout(() => setValue(true), delay) // toggle value to true
-  return value // return value
+  // toggles value from false to true after timeout
+  const [value, setValue] = useState(false)
+  useTimeout(() => setValue(true), delay)
+  return value
 }
