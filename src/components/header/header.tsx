@@ -1,6 +1,6 @@
 import * as React from "react"
 import {
-  HeaderBackground,
+  BlurBackground,
   HeaderContent,
   HeaderWrapper,
   NavStyled,
@@ -36,7 +36,7 @@ const Header = ({ type }: HeaderPropsI) => {
   return (
     <NavStyled key={"header"}>
       <HeaderWrapper>
-        <HeaderBackground type={type} />
+        <BlurBackground type={type} />
         <HeaderContent>
           <Flex>
             <div>

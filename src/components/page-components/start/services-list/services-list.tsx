@@ -9,6 +9,8 @@ import { LiElemStyled } from "../../../list/li-elem/li-elem"
 import { UlList } from "../../../list/ul-list/ul-list.styled"
 import Viewport from "../../../viewport/viewport"
 import { useAppearedInView } from "../../../../hooks/useAppearedInView"
+import { useAppearFromBottom } from "../../../../hooks/useAppearFromBottom"
+import { useAppearFromTop } from "../../../../hooks/useAppearFromTop"
 
 const LiAnimated = posed(LiElemStyled)({
   visible: {
@@ -40,7 +42,7 @@ const UlAnimated = posed(UlList)({
 
 const ServicesList = () => {
   const listAnimationRef = useRef(null)
-  const listAppeared = useAppearedInView(listAnimationRef)
+  const listAppeared = useAppearFromBottom(listAnimationRef)
   return (
     <Viewport height={"100vh"}>
       <section
@@ -48,7 +50,7 @@ const ServicesList = () => {
           padding: "0 5vw 0 5vw",
         }}
       >
-        <ListTitleStyled>We provide</ListTitleStyled>
+        <ListTitleStyled>I provide</ListTitleStyled>
         <ListSubtitleStyled>Fullstack Service</ListSubtitleStyled>
         <UlAnimated
           ref={listAnimationRef}

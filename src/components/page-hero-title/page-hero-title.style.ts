@@ -4,9 +4,7 @@ interface PropsI {
   url:string
 }
 
-export const PageTitleStyled = styled.h2`
-  font-weight: 900;
-  font-size: 5rem;
+export const PageTitleStyled = styled.span`
   display: inline-block;
   
   background-image: url(${({url}:PropsI)=>url});

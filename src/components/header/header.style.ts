@@ -2,9 +2,10 @@ import styled from "styled-components"
 import { HeaderType } from "./header"
 
 export const NavStyled = styled.nav`
-  position: sticky;
-  top: 0;
-  left: 0;
+  //position: sticky;
+  //top: 0;
+  //left: 0;
+  position: relative;
   width: 100%;
   height: 55px;
   z-index: 9997;
@@ -26,7 +27,7 @@ export const HeaderWrapper = styled.div`
   z-index: 1;
 `
 
-export const HeaderBackground = styled.div<{type: HeaderType}>`
+export const BlurBackground = styled.div<{type: HeaderType}>`
   transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
   backdrop-filter: saturate(180%) blur(20px);
   background-color: ${({type})=> type == HeaderType.black ? '#000000c9' : '#ffffffb3'};

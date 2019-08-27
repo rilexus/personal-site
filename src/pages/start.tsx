@@ -1,6 +1,6 @@
 import * as React from "react"
 import Align from "../components/align/align"
-import PageTitle from "../components/page-title/page-title"
+
 import SEO from "../components/seo"
 import Viewport from "../components/viewport/viewport"
 import Sticky from "../components/sticky/sticky"
@@ -11,13 +11,17 @@ import Layout from "../components/layout/layout"
 import Header, { HeaderType } from "../components/header/header"
 import ServicesList from "../components/page-components/start/services-list/services-list"
 import AppearAnimation from "../animations/appear.animation"
-import { ParagraphStyled } from "../components/pragraph/pragraph.style"
+
 import StartPageFooter from "../components/page-components/start/footer/start-page-footer"
 import useScrollPosition from "../hooks/useScrollPosition"
+import { IntroText } from "../components/intro-text/intro-text.styled"
+import { HeroHeadline } from "../components/hero-headline/hero-headline"
+import { HeroSubtitle } from "../components/hero-subtitle/hero-subtitle.styled"
+import PageHeroTitle from "../components/page-hero-title/page-hero-title"
+import PageTitle from "../components/page-title/page-title"
 
 const StartPage = () => {
   const windowDimensions = useWindowDimensions()
-  const scrollPosition = useScrollPosition()
   const mappedOpacityValue = useMappedValue(
     1,
     0,
@@ -29,7 +33,7 @@ const StartPage = () => {
     <div>
       <SEO title="Home" />
       <Header type={HeaderType.white} />
-
+      <PageTitle title={"Home"} />
       <Layout>
         <section>
           <Viewport height={"300vh"}>
@@ -37,30 +41,31 @@ const StartPage = () => {
               <Align position={"center"}>
                 <Opacity opacity={mappedOpacityValue}>
                   <AppearAnimation duration={1000} delay={700}>
-                    <PageTitle
+                    <PageHeroTitle
                       url={
                         "https://media.giphy.com/media/3o6ZtrcBDLanIMbdRe/source.gif"
                       }
                     >
-                      <div>
-                        Unique <br /> Web Solutions
-                      </div>
-                    </PageTitle>
+                      <HeroHeadline>UNIQUE</HeroHeadline>
+                    </PageHeroTitle>
                   </AppearAnimation>
-                  <AppearAnimation duration={1000} delay={1200}>
+                  <AppearAnimation duration={1000} delay={2000}>
+                    <HeroSubtitle>web development solution</HeroSubtitle>
+                  </AppearAnimation>
+                  <AppearAnimation duration={1000} delay={2600}>
                     <div
                       style={{
                         margin: "0 auto",
                         maxWidth: "670px",
                       }}
                     >
-                      <ParagraphStyled>
+                      <IntroText>
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Explicabo, ratione, reiciendis. Amet animi at
                         culpa cupiditate, debitis dicta dolorem esse iste,
                         nesciunt nihil omnis provident quae quaerat, soluta
                         ullam vero?
-                      </ParagraphStyled>
+                      </IntroText>
                     </div>
                   </AppearAnimation>
                 </Opacity>
