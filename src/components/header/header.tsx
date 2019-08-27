@@ -17,11 +17,10 @@ const Flex = styled.div`
   align-items: center;
 `
 
-const LinksWrapper = styled.div<{ type: HeaderType }>`
+const LinksWrapper = styled.div`
   a {
     text-decoration: none;
-
-    color: ${({ type }) => (type === HeaderType.white ? "#2b2b2b" : "white")};
+    color: #2b2b2b;
     margin-right: 20px;
   }
 `
@@ -29,23 +28,18 @@ export enum HeaderType {
   black = "black",
   white = "white",
 }
-interface HeaderPropsI {
-  type: HeaderType
-}
-const Header = ({ type }: HeaderPropsI) => {
+interface HeaderPropsI {}
+const Header = ({  }: HeaderPropsI) => {
   return (
     <NavStyled key={"header"}>
       <HeaderWrapper>
-        <BlurBackground type={type} />
         <HeaderContent>
           <Flex>
             <div>
               <HeaderLogo />
             </div>
-            <LinksWrapper type={type}>
-              <Link to={"/bio"}>Bio</Link>
-              <Link to={"/portfolio"}>Portfolio</Link>
-              <Link to={"/client"}>Clients</Link>
+            <LinksWrapper>
+              <Link to={"/contact"}>Contact</Link>
             </LinksWrapper>
           </Flex>
         </HeaderContent>

@@ -13,13 +13,18 @@ import ServicesList from "../components/page-components/start/services-list/serv
 import AppearAnimation from "../animations/appear.animation"
 
 import StartPageFooter from "../components/page-components/start/footer/start-page-footer"
-import useScrollPosition from "../hooks/useScrollPosition"
 import { IntroText } from "../components/intro-text/intro-text.styled"
 import { HeroHeadline } from "../components/hero-headline/hero-headline"
 import { HeroSubtitle } from "../components/hero-subtitle/hero-subtitle.styled"
 import PageHeroTitle from "../components/page-hero-title/page-hero-title"
 import PageTitle from "../components/page-title/page-title"
 import TechList from "../components/page-components/start/tech-list/tech-list"
+import ScrollDownIcon from "../components/ScrollDownIcon/scroll-down-icon"
+import { CenterMargin } from "../components/center-margin/center-margin.styled"
+import { ParagraphStyled } from "../components/pragraph/pragraph.style"
+import MainButton from "../components/main-button/main-button"
+import { LetsChat } from "./contact"
+import LetsChatSection from "../components/page-components/start/lets-chat/lets-chat"
 
 const StartPage = () => {
   const windowDimensions = useWindowDimensions()
@@ -33,7 +38,7 @@ const StartPage = () => {
   return (
     <div>
       <SEO title="Home" />
-      <Header type={HeaderType.white} />
+      <Header />
       <PageTitle title={"Home"} />
       <Layout>
         <section>
@@ -50,10 +55,10 @@ const StartPage = () => {
                       <HeroHeadline>UNIQUE</HeroHeadline>
                     </PageHeroTitle>
                   </AppearAnimation>
-                  <AppearAnimation duration={1000} delay={2000}>
+                  <AppearAnimation duration={1000} delay={1400}>
                     <HeroSubtitle>web development solution</HeroSubtitle>
                   </AppearAnimation>
-                  <AppearAnimation duration={1000} delay={2600}>
+                  <AppearAnimation duration={1000} delay={1800}>
                     <div
                       style={{
                         margin: "0 auto",
@@ -72,11 +77,13 @@ const StartPage = () => {
                 </Opacity>
               </Align>
             </Sticky>
+            <ScrollDownIcon />
           </Viewport>
         </section>
         <ServicesList />
       </Layout>
       <TechList />
+      <LetsChatSection />
       <StartPageFooter />
     </div>
   )

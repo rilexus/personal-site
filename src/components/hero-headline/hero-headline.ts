@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
-export const HeroHeadline = styled.h1`
-  font-size: 9rem;
+export const HeroHeadline = styled.h1<{fontSize: string}>`
+  
+  font-size: ${({fontSize})=> fontSize || '9rem'};
   margin: 0;
   line-height: 1;
   font-weight: 900;

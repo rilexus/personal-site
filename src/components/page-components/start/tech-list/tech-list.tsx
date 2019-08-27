@@ -8,13 +8,15 @@ import { useIsInView } from "../../../../hooks/useIsinView"
 import { ThemePropsI } from "../../../../providers/swith-theme/themes/default.theme"
 import { ParagraphStyled } from "../../../pragraph/pragraph.style"
 import ScrollView from "./scroll-view/scroll-view"
+import { CenterMargin } from "../../../center-margin/center-margin.styled"
+import Align from "../../../align/align"
 const techIcons = [
   {
     name: "React",
-    width: 80,
-    height: 80,
+    width: 55,
+    height: 55,
     url: "https://reactjs.org/",
-    src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    src: "https://cdn.worldvectorlogo.com/logos/react.svg",
     desc:
       "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded.",
   },
@@ -126,7 +128,6 @@ const ChildStaggger = posed.div({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-evenly",
-    margin: "10vh 0 10vh 0",
   },
 })
 
@@ -205,17 +206,17 @@ const PCentered = styled.p`
 const TechIntro = () => {
   return (
     <div>
-      <h2>
+      <h1>
         I L
         <span
           style={{
-            fontSize: "1.1rem",
+            fontSize: "1.4rem",
           }}
         >
           ❤️
         </span>
         ve Technology!
-      </h2>
+      </h1>
       <PCentered>
         Every tool serves a certain purpose and solves a specific problem. Those
         are my tools which help me solving mine.
@@ -248,10 +249,10 @@ const Tech = props => {
   const [hoveredIndex, setHoveredIndex] = useState(0)
   const currIconInfo = [techIcons[hoveredIndex]]
   return (
-    <TechWrapper ref={ref}>
+    <TechWrapper>
       <TechIntro />
       <ScrollView>
-        <ChildStaggger pose={animate ? "visible" : "hidden"}>
+        <ChildStaggger ref={ref} pose={animate ? "visible" : "hidden"}>
           {techIcons.map((icon, idx) => (
             <span
               key={`tech-icon-${idx}`}
@@ -265,22 +266,18 @@ const Tech = props => {
         </ChildStaggger>
       </ScrollView>
 
-      <div
-        style={{
-          maxWidth: "660px",
-          margin: "0 auto",
-          textAlign: "center",
-        }}
-      >
-        <PoseGroup animateOnMount enterPose={"enter"}>
-          {currIconInfo.map(({ name, desc }, idx) => (
-            <FadeInAnimation key={`curr-icon-${name}`}>
-              <h3>{name}</h3>
-              <ParagraphStyled>{desc}</ParagraphStyled>
-            </FadeInAnimation>
-          ))}
-        </PoseGroup>
-      </div>
+      <CenterMargin>
+        <Align position={"center"}>
+          <PoseGroup animateOnMount enterPose={"enter"}>
+            {currIconInfo.map(({ name, desc }, idx) => (
+              <FadeInAnimation key={`curr-icon-${name}`}>
+                <h3>{name}</h3>
+                <ParagraphStyled>{desc}</ParagraphStyled>
+              </FadeInAnimation>
+            ))}
+          </PoseGroup>
+        </Align>
+      </CenterMargin>
     </TechWrapper>
   )
 }

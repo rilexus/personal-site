@@ -3,10 +3,11 @@ import styled from "styled-components"
 import { useState } from "react"
 
 const Wrapper = styled.div`
-  height: 190px;
   overflow: hidden;
   position: relative;
-  margin: 35px 0 35px 0;
+  height: 85px;
+  align-items: center;
+  margin: 20vh 0 5vh 0;
 `
 
 const ScrollbarWrapper = styled.div`
@@ -41,6 +42,7 @@ const ScrollView = ({ children }) => {
         style={{
           width: `${visibleViewWidth}px`,
           overflowX: "scroll",
+          paddingBottom: "55px",
         }}
       >
         <div
