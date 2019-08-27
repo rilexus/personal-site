@@ -1,10 +1,12 @@
 import styled from "styled-components"
+import { ThemePropsI } from "../../providers/swith-theme/themes/default.theme"
 
 export const ParagraphStyled = styled.p`
-  text-rendering: geometricPrecision;
   font-size: 1.1rem;
-  line-height: 1.85;
+  line-height: 1.47059;
   font-weight: 400;
-  color: rgba(0,0,0,.7);
-
+  letter-spacing: -.022em; 
+  color: ${({theme}:ThemePropsI)=>theme.colors.text.prime};
+  text-rendering: geometricPrecision;
+ 
 `

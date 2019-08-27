@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9301b2-d386-4578-9223-d9fbcf10fe81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/blur-background/blur-background.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hero-headline/hero-headline.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hero-subtitle/hero-subtitle.styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/intro-text/intro-text.styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/page-hero-title/page-hero-title.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useAppearFromBottom.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useAppearFromTop.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/swith-theme/switch-theme.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/swith-theme/themes/default.theme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Tooltip/Tooltip.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/page-components/start/tech-list/tech-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useHover.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/intro-text/intro-text.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/intro-text/intro-text.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/list/li-elem/li-elem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list/li-elem/li-elem.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page-title/page-title.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-hero-title/page-hero-title.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page-title/page-title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-title/page-title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pragraph/pragraph.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pragraph/pragraph.style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/start.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/start.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,10 +26,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
+        <entry file="file://$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -47,22 +38,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/start.tsx">
+        <entry file="file://$PROJECT_DIR$/src/components/list/li-elem/li-elem.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pragraph/pragraph.style.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/page-title/page-title.tsx">
+        <entry file="file://$PROJECT_DIR$/src/components/page-components/start/tech-list/tech-list.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="246">
+              <caret line="254" column="29" selection-start-line="254" selection-start-column="29" selection-end-line="254" selection-end-column="29" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -96,8 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/components/header/header.tsx" />
-        <option value="$PROJECT_DIR$/src/components/center/center.tsx" />
         <option value="$PROJECT_DIR$/src/components/align/align.tsx" />
         <option value="$PROJECT_DIR$/src/pages/start/start.page.tsx" />
         <option value="$PROJECT_DIR$/src/pages/404.js" />
@@ -117,14 +115,12 @@
         <option value="$PROJECT_DIR$/src/components/list-title/list-title.ts" />
         <option value="$PROJECT_DIR$/src/components/list/list-subtitle/list-subtitle.ts" />
         <option value="$PROJECT_DIR$/src/components/list/ul-list/ul-list.styled.ts" />
-        <option value="$PROJECT_DIR$/src/components/list/li-elem/li-elem.ts" />
         <option value="$PROJECT_DIR$/src/hooks/useIsinView.tsx" />
         <option value="$PROJECT_DIR$/src/pages/start/development-process-list/development-process-list.tsx" />
         <option value="$PROJECT_DIR$/src/components/header/header-logo/header-logo.tsx" />
         <option value="$PROJECT_DIR$/src/pages/start/services-list/services-list.tsx" />
         <option value="$PROJECT_DIR$/src/hooks/useSignal.tsx" />
         <option value="$PROJECT_DIR$/src/components/list/list-title/list-title.ts" />
-        <option value="$PROJECT_DIR$/src/components/pragraph/pragraph.style.ts" />
         <option value="$PROJECT_DIR$/src/components/layout/layout.tsx" />
         <option value="$PROJECT_DIR$/src/pages/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/header/header.tsx" />
@@ -136,17 +132,21 @@
         <option value="$PROJECT_DIR$/src/components/layout/layout.css" />
         <option value="$PROJECT_DIR$/gatsby-browser.js" />
         <option value="$PROJECT_DIR$/src/providers/swith-theme/switch-theme.tsx" />
-        <option value="$PROJECT_DIR$/src/components/intro-text/intro-text.styled.ts" />
         <option value="$PROJECT_DIR$/src/providers/swith-theme/themes/default.theme.ts" />
         <option value="$PROJECT_DIR$/src/components/page-title/page-title.style.ts" />
         <option value="$PROJECT_DIR$/src/components/hero-subtitle/hero-subtitle.styled.ts" />
         <option value="$PROJECT_DIR$/src/components/hero-headline/hero-headline.ts" />
-        <option value="$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx" />
         <option value="$PROJECT_DIR$/src/components/page-title/page-hero-title.tsx" />
         <option value="$PROJECT_DIR$/src/components/header/header.style.ts" />
-        <option value="$PROJECT_DIR$/src/pages/start.tsx" />
         <option value="$PROJECT_DIR$/src/components/blur-background/blur-background.tsx" />
         <option value="$PROJECT_DIR$/src/components/page-title/page-title.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Tooltip/Tooltip.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/start.tsx" />
+        <option value="$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pragraph/pragraph.style.ts" />
+        <option value="$PROJECT_DIR$/src/components/intro-text/intro-text.styled.ts" />
+        <option value="$PROJECT_DIR$/src/components/list/li-elem/li-elem.ts" />
+        <option value="$PROJECT_DIR$/src/components/page-components/start/tech-list/tech-list.tsx" />
       </list>
     </option>
   </component>
@@ -183,7 +183,37 @@
               <item name="stanislavpanchenko" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="blur-background" type="462c0819:PsiDirectoryNode" />
+              <item name="page-components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stanislavpanchenko" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stanislavpanchenko" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="page-components" type="462c0819:PsiDirectoryNode" />
+              <item name="start" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stanislavpanchenko" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stanislavpanchenko" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="page-components" type="462c0819:PsiDirectoryNode" />
+              <item name="start" type="462c0819:PsiDirectoryNode" />
+              <item name="tech-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stanislavpanchenko" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stanislavpanchenko" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Tooltip" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stanislavpanchenko" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stanislavpanchenko" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hooks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -196,7 +226,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hooks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -211,15 +241,16 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/hooks" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/page-components" />
       <recent name="$PROJECT_DIR$/src/components/list" />
       <recent name="$PROJECT_DIR$/src/components/layout" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/components" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/hooks" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -286,12 +317,12 @@
       <workItem from="1566803257766" duration="2788000" />
       <workItem from="1566813709253" duration="9027000" />
       <workItem from="1566823064420" duration="14052000" />
-      <workItem from="1566890101959" duration="6033000" />
+      <workItem from="1566890101959" duration="10734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31900000" />
+    <option name="totallyTimeSpent" value="36601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -303,7 +334,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49791667" weight="0.23501763" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6180556" visible="true" weight="0.29259694" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6180556" visible="true" weight="0.26204467" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -312,7 +343,7 @@
       <window_info anchor="bottom" id="GraphQL" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.38194445" side_tool="true" visible="true" weight="0.29259694" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.38194445" side_tool="true" visible="true" weight="0.26204467" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -326,22 +357,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-666">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/seo.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -481,13 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/list/li-elem/li-elem.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/page-components/start/development-process-list/development-process-list.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -531,23 +539,6 @@
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pragraph/pragraph.style.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -643,30 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/intro-text/intro-text.styled.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/page-hero-title/page-hero-title.style.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,16 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/start.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/blur-background/blur-background.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -748,10 +709,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hooks/useHover.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tooltip/index.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tooltip/Tooltip.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/page-title/page-title.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="143">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pragraph/pragraph.style.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/intro-text/intro-text.styled.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/start.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/list/li-elem/li-elem.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/page-components/start/tech-list/tech-list.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="254" column="29" selection-start-line="254" selection-start-column="29" selection-end-line="254" selection-end-column="29" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

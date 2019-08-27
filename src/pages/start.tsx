@@ -19,6 +19,7 @@ import { HeroHeadline } from "../components/hero-headline/hero-headline"
 import { HeroSubtitle } from "../components/hero-subtitle/hero-subtitle.styled"
 import PageHeroTitle from "../components/page-hero-title/page-hero-title"
 import PageTitle from "../components/page-title/page-title"
+import TechList from "../components/page-components/start/tech-list/tech-list"
 
 const StartPage = () => {
   const windowDimensions = useWindowDimensions()
@@ -75,6 +76,7 @@ const StartPage = () => {
         </section>
         <ServicesList />
       </Layout>
+      <TechList />
       <StartPageFooter />
     </div>
   )

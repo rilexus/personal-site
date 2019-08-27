@@ -2,15 +2,12 @@ import * as React from "react"
 import { ListTitleStyled } from "../../../list/list-title/list-title"
 import { ListSubtitleStyled } from "../../../list/list-subtitle/list-subtitle"
 import { ParagraphStyled } from "../../../pragraph/pragraph.style"
-import { useEffect, useRef, useState } from "react"
-import { useIsInView } from "../../../../hooks/useIsinView"
+import { useRef } from "react"
 import posed from "react-pose"
 import { LiElemStyled } from "../../../list/li-elem/li-elem"
 import { UlList } from "../../../list/ul-list/ul-list.styled"
 import Viewport from "../../../viewport/viewport"
-import { useAppearedInView } from "../../../../hooks/useAppearedInView"
 import { useAppearFromBottom } from "../../../../hooks/useAppearFromBottom"
-import { useAppearFromTop } from "../../../../hooks/useAppearFromTop"
 
 const LiAnimated = posed(LiElemStyled)({
   visible: {
