@@ -7,6 +7,7 @@ import Tooltip from "../../../Tooltip/Tooltip"
 import { useIsInView } from "../../../../hooks/useIsinView"
 import { ThemePropsI } from "../../../../providers/swith-theme/themes/default.theme"
 import { ParagraphStyled } from "../../../pragraph/pragraph.style"
+import ScrollView from "./scroll-view/scroll-view"
 const techIcons = [
   {
     name: "React",
@@ -249,38 +250,21 @@ const Tech = props => {
   return (
     <TechWrapper ref={ref}>
       <TechIntro />
-      <div
-        style={{
-          height: "250px",
-          overflow: "hidden",
-        }}
-      >
-        <div
-          style={{
-            width: "700px",
-            overflowX: "scroll",
-          }}
-        >
-          <div
-            style={{
-              width: "800px",
-            }}
-          >
-            <ChildStaggger pose={animate ? "visible" : "hidden"}>
-              {techIcons.map((icon, idx) => (
-                <span
-                  key={`tech-icon-${idx}`}
-                  onMouseOver={() => {
-                    setHoveredIndex(idx)
-                  }}
-                >
-                  <AnimatedIcon icon={icon} />
-                </span>
-              ))}
-            </ChildStaggger>
-          </div>
-        </div>
-      </div>
+      <ScrollView>
+        <ChildStaggger pose={animate ? "visible" : "hidden"}>
+          {techIcons.map((icon, idx) => (
+            <span
+              key={`tech-icon-${idx}`}
+              onMouseOver={() => {
+                setHoveredIndex(idx)
+              }}
+            >
+              <AnimatedIcon icon={icon} />
+            </span>
+          ))}
+        </ChildStaggger>
+      </ScrollView>
+
       <div
         style={{
           maxWidth: "660px",
