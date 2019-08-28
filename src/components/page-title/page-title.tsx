@@ -12,7 +12,10 @@ interface PageTitlePropsI {
 }
 const Style = styled.div<{ opacity: number }>`
   font-size: 1.3rem;
-  opacity: ${({ opacity }) => opacity};
+  opacity: ${({ opacity }) => {
+    console.log("opacity: ", opacity)
+    return opacity || 0
+  }};
   font-weight: 900;
   height: 55px;
   position: sticky;
@@ -21,20 +24,6 @@ const Style = styled.div<{ opacity: number }>`
   padding: 0 25px 0 25px;
   border-bottom: 1px solid #d8d8d8;
 `
-const Animation = posed(Style)({
-  init: {
-    x: "-50%",
-    opacity: 0,
-  },
-  enter: {
-    x: "0%",
-    transition: () => ({
-      x: { duration: 4000 },
-    }),
-    opacity: 1,
-  },
-})
-
 const TitleStyled = styled.div`
   font-size: 21px;
   line-height: 1.14286;

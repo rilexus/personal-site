@@ -12,6 +12,16 @@ import { CenterMargin } from "../../../center-margin/center-margin.styled"
 import Align from "../../../align/align"
 const techIcons = [
   {
+    name: "JavaScript",
+    width: 50,
+    height: 50,
+    url: "https://www.javascript.com",
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/240px-Unofficial_JavaScript_logo_2.svg.png",
+    desc:
+      "JavaScript often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.",
+  },
+  {
     name: "React",
     width: 55,
     height: 55,

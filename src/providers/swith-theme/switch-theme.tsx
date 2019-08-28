@@ -7,6 +7,7 @@ interface SwitchThemePropsI {
   name: "default" | "black"
   children: ReactNode | ReactNode[]
 }
+
 export default function SwitchTheme({ name, children }: SwitchThemePropsI) {
   const inDev = process.env.NODE_ENV === "development"
   const themeType = {
@@ -15,6 +16,6 @@ export default function SwitchTheme({ name, children }: SwitchThemePropsI) {
   if (!(name in themeType) && inDev) {
     console.warn(`This theme does not exist!: ${name}`)
   }
-  const theme:ThemeI = name in themeType ? themeType[name] : {}
+  const theme: ThemeI = name in themeType ? themeType[name] : {}
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }

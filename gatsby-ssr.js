@@ -5,3 +5,13 @@
  */
 
 // You can delete this file if you're not using it
+import React from 'react';
+import SwitchTheme from "./src/providers/swith-theme/switch-theme"
+
+export const wrapRootElement = ({element}) => {
+  return (
+    <SwitchTheme name={'default'}>
+      {element}
+    </SwitchTheme>
+  )
+}
