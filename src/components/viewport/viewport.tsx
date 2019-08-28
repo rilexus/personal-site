@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { ReactNode } from "react"
 
 const Styled = styled.div<{ height: string }>`
-  height: ${({ height }) => height};
+  min-height: ${({ height }) => height};
 `
 interface ViewportPropsI {
   height: string

@@ -35,7 +35,7 @@ const Layout = ({ children }: LayoutPropsI) => {
   return (
     <>
       <StyledWrapper>
-        <main>{children}</main>
+        <div>{children}</div>
       </StyledWrapper>
     </>
   )

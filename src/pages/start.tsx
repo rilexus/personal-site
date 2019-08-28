@@ -40,51 +40,53 @@ const StartPage = () => {
       <SEO title="Home" />
       <Header />
       <PageTitle title={"Home"} />
-      <Layout>
-        <section>
-          <Viewport height={"300vh"}>
-            <Sticky top={"200px"}>
-              <Align position={"center"}>
-                <Opacity opacity={mappedOpacityValue}>
-                  <AppearAnimation duration={1000} delay={700}>
-                    <PageHeroTitle
-                      url={
-                        "https://media.giphy.com/media/3o6ZtrcBDLanIMbdRe/source.gif"
-                      }
-                    >
-                      <HeroHeadline>UNIQUE</HeroHeadline>
-                    </PageHeroTitle>
-                  </AppearAnimation>
-                  <AppearAnimation duration={1000} delay={1400}>
-                    <HeroSubtitle>web development solution</HeroSubtitle>
-                  </AppearAnimation>
-                  <AppearAnimation duration={1000} delay={1800}>
-                    <div
-                      style={{
-                        margin: "0 auto",
-                        maxWidth: "670px",
-                      }}
-                    >
-                      <IntroText>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Explicabo, ratione, reiciendis. Amet animi at
-                        culpa cupiditate, debitis dicta dolorem esse iste,
-                        nesciunt nihil omnis provident quae quaerat, soluta
-                        ullam vero?
-                      </IntroText>
-                    </div>
-                  </AppearAnimation>
-                </Opacity>
-              </Align>
-            </Sticky>
-            <ScrollDownIcon />
-          </Viewport>
-        </section>
-        <ServicesList />
-      </Layout>
-      <TechList />
-      <LetsChatSection />
-      <StartPageFooter />
+      <main>
+        <Layout>
+          <section>
+            <Viewport height={"300vh"}>
+              <Sticky top={"200px"}>
+                <Align position={"center"}>
+                  <Opacity opacity={mappedOpacityValue}>
+                    <AppearAnimation duration={1000} delay={700}>
+                      <PageHeroTitle
+                        url={
+                          "https://media.giphy.com/media/3o6ZtrcBDLanIMbdRe/source.gif"
+                        }
+                      >
+                        <HeroHeadline fontSize={"7rem"}>UNIQUE</HeroHeadline>
+                      </PageHeroTitle>
+                    </AppearAnimation>
+                    <AppearAnimation duration={1000} delay={1400}>
+                      <HeroSubtitle>web development solution</HeroSubtitle>
+                    </AppearAnimation>
+                    <AppearAnimation duration={1000} delay={1800}>
+                      <div
+                        style={{
+                          margin: "0 auto",
+                          maxWidth: "670px",
+                        }}
+                      >
+                        <IntroText>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Explicabo, ratione, reiciendis. Amet animi at
+                          culpa cupiditate, debitis dicta dolorem esse iste,
+                          nesciunt nihil omnis provident quae quaerat, soluta
+                          ullam vero?
+                        </IntroText>
+                      </div>
+                    </AppearAnimation>
+                  </Opacity>
+                </Align>
+              </Sticky>
+              <ScrollDownIcon />
+            </Viewport>
+          </section>
+          <ServicesList />
+        </Layout>
+        <TechList />
+        <LetsChatSection />
+        <StartPageFooter />
+      </main>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import AppearAnimation from "../../../../animations/appear.animation"
 import { useAppearedInView } from "../../../../hooks/useAppearedInView"
 import Viewport from "../../../viewport/viewport"
 import { useIsInView } from "../../../../hooks/useIsinView"
+import { CenterMargin } from "../../../center-margin/center-margin.styled"
 
 const Background = styled.div<{ opacity?: number }>`
   background-color: #fbfcfd;
@@ -29,27 +30,27 @@ const StartPageFooter = ({  }: StartPageFooterPropsI) => {
     <section>
       <Background>
         <Layout>
-          <div
-            style={{
-              //padding: "50vh",
-              margin: "0 auto",
-              maxWidth: "670px",
-            }}
-          >
-            <Greeting>Hi! I’m Stanislav,</Greeting>
-            <Exlpination>
-              Stanislav Panchenko and I’m crazy about web design and UX/XD. I’m
-              currently studying Computer Science in Aachen, Germany and work as
-              a frontend developer.
-            </Exlpination>
-            <ParagraphStyled>
-              <span>
-                I’m always excited to start new projects! If you have ideas,
-                let’s chat about it. Drop me a message and let’s create awesome
-                sites.
-              </span>
-            </ParagraphStyled>
-          </div>
+          <CenterMargin>
+            <div
+              style={{
+                margin: "0 35px",
+              }}
+            >
+              <Greeting>Hi! I’m Stanislav,</Greeting>
+              <Exlpination>
+                Stanislav Panchenko and I’m crazy about web design and UX/XD.
+                I’m currently studying Computer Science in Aachen, Germany and
+                work as a frontend developer.
+              </Exlpination>
+              <ParagraphStyled>
+                <span>
+                  I’m always excited to start new projects! If you have ideas,
+                  let’s chat about it. Drop me a message and let’s create
+                  awesome sites.
+                </span>
+              </ParagraphStyled>
+            </div>
+          </CenterMargin>
         </Layout>
       </Background>
     </section>

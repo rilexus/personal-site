@@ -1,6 +1,5 @@
 import * as React from "react"
 import styled from "styled-components"
-import { useState } from "react"
 
 const Wrapper = styled.div`
   overflow: hidden;
@@ -9,56 +8,43 @@ const Wrapper = styled.div`
   align-items: center;
   margin: 20vh 0 5vh 0;
 `
-
-const ScrollbarWrapper = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  border-radius: 2px;
-  width: 100%;
-  background-color: #f5f5f5;
-`
-const Scrollbar = styled.div`
-  border-radius: 2px;
-  position: absolute;
-  width: ${({ width }) => width}px;
-  left: ${({ left }) => left}px;
+const VisibleViewStyled = styled.div`
   top: 0;
-  height: 2px;
-  background-color: #8b8b8b;
-`
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  overflow-x: scroll;
 
+  ::-webkit-scrollbar {
+    height: 2px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 5px #8b8b8b;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8b8b8b;
+  }
+
+  //margin-bottom: -30px;
+`
 const ScrollView = ({ children }) => {
-  const [scrollPos, setScrollPos] = useState(0)
-  const visibleViewWidth = 700
-  const scrollViewWidth = 800
+  const scrollViewWidth = 1000
   return (
     <Wrapper>
-      <div
-        onScroll={(e: any) => {
-          setScrollPos(e.target.scrollLeft)
-        }}
-        style={{
-          width: `${visibleViewWidth}px`,
-          overflowX: "scroll",
-          paddingBottom: "55px",
-        }}
-      >
+      <VisibleViewStyled>
         <div
           style={{
-            width: `${scrollViewWidth}px`,
+            minWidth: `${scrollViewWidth}px`,
           }}
         >
           {children}
         </div>
-      </div>
-      <ScrollbarWrapper>
-        <Scrollbar
-          left={scrollPos}
-          width={visibleViewWidth - (scrollViewWidth - visibleViewWidth)}
-        />
-      </ScrollbarWrapper>
+      </VisibleViewStyled>
     </Wrapper>
   )
 }
