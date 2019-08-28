@@ -24,6 +24,13 @@ function SEO({ description, lang, meta = [], title }: SEOPropsI) {
             title
             description
             author
+            url
+            keywords
+            revised
+            identifierURL
+            twitterUsername
+            rating
+            ogLocality
           }
         }
       }
@@ -62,7 +69,7 @@ function SEO({ description, lang, meta = [], title }: SEOPropsI) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.twitterUsername,
         },
         {
           name: `twitter:title`,
@@ -71,6 +78,30 @@ function SEO({ description, lang, meta = [], title }: SEOPropsI) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: "keywords",
+          content: site.siteMetadata.keywords,
+        },
+        {
+          name: "author",
+          content: site.siteMetadata.author,
+        },
+        {
+          name: "revised",
+          content: site.siteMetadata.revised,
+        },
+        {
+          name: "identifier-URL",
+          content: site.siteMetadata.identifierURL,
+        },
+        {
+          name: "rating",
+          content: site.siteMetadata.rating,
+        },
+        {
+          name: "og:locality",
+          content: site.siteMetadata.ogLocality,
         },
       ].concat(meta)}
     />

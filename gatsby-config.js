@@ -2,7 +2,15 @@ module.exports = {
   siteMetadata: {
     title: `Personal website of Stanislav Panchenko`,
     description: `Personal website of Stanislav Panchenko`,
-    author: `stanislav panchenko`,
+    author: `Stanislav Panchenko mail@stanisalvpanchenko.de`,
+    url: "http://www.stanislavpanchenko.de",
+    twitterUsername: "@rilexus",
+    keywords: 'Stanislav Panchenko, Web Developer, Aachen, Developer, Programmierer',
+    revised: `Stanislav Panchenko: ${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`,
+    identifierURL: 'www.stanislavpanchenko.de',
+    category: '',
+    rating: 'Safe For Kids',
+    ogLocality: 'Aachen Germany'
   },
   plugins: [
     `gatsby-plugin-styled-components`,
