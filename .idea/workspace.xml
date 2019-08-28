@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9301b2-d386-4578-9223-d9fbcf10fe81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-ssr.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-ssr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page-components/start/tech-list/tech-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/start/tech-list/tech-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/page-title/page-title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-title/page-title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/swith-theme/switch-theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/swith-theme/switch-theme.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,14 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/page-title/page-title.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="60">
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -59,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/viewport/viewport.tsx" />
         <option value="$PROJECT_DIR$/src/components/transform/transform.tsx" />
         <option value="$PROJECT_DIR$/src/themes/default.ts" />
         <option value="$PROJECT_DIR$/src/themes/themes.ts" />
@@ -110,6 +116,7 @@
         <option value="$PROJECT_DIR$/src/components/pragraph/pragraph.style.ts" />
         <option value="$PROJECT_DIR$/gatsby-ssr.js" />
         <option value="$PROJECT_DIR$/src/components/page-title/page-title.tsx" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -216,7 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.develop">
+  <component name="RunManager" selected="npm.serve">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -249,9 +256,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.develop" />
-        <item itemvalue="npm.serve" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.develop" />
       </list>
     </recent_temporary>
   </component>
@@ -272,24 +279,24 @@
       <workItem from="1566905890499" duration="12000" />
       <workItem from="1566906653969" duration="2278000" />
       <workItem from="1566918097522" duration="7490000" />
-      <workItem from="1566981716407" duration="1634000" />
+      <workItem from="1566981716407" duration="2111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48471000" />
+    <option name="totallyTimeSpent" value="48948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21111111" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21111111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49791667" weight="0.23501763" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6958333" visible="true" weight="0.37250292" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6958333" visible="true" weight="0.22209166" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -298,7 +305,7 @@
       <window_info anchor="bottom" id="GraphQL" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.30416667" side_tool="true" visible="true" weight="0.37250292" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.30416667" side_tool="true" visible="true" weight="0.22209166" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -312,13 +319,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/list/list-subtitle/list-subtitle.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/themes/default.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -745,11 +745,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/page-title/page-title.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="60">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
         </state>
       </provider>
     </entry>

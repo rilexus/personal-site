@@ -12,10 +12,7 @@ interface PageTitlePropsI {
 }
 const Style = styled.div<{ opacity: number }>`
   font-size: 1.3rem;
-  opacity: ${({ opacity }) => {
-    console.log("opacity: ", opacity)
-    return opacity || 0
-  }};
+  opacity: ${({ opacity }) => opacity || 0};
   font-weight: 900;
   height: 55px;
   position: sticky;
