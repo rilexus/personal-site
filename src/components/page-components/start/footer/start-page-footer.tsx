@@ -2,11 +2,6 @@ import * as React from "react"
 import styled from "styled-components"
 import Layout from "../../../layout/layout"
 import { ParagraphStyled } from "../../../pragraph/pragraph.style"
-import { useRef } from "react"
-import AppearAnimation from "../../../../animations/appear.animation"
-import { useAppearedInView } from "../../../../hooks/useAppearedInView"
-import Viewport from "../../../viewport/viewport"
-import { useIsInView } from "../../../../hooks/useIsinView"
 import { CenterMargin } from "../../../center-margin/center-margin.styled"
 
 const Background = styled.div<{ opacity?: number }>`

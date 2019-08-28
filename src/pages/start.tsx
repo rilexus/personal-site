@@ -1,6 +1,5 @@
 import * as React from "react"
 import Align from "../components/align/align"
-
 import SEO from "../components/seo"
 import Viewport from "../components/viewport/viewport"
 import Sticky from "../components/sticky/sticky"
@@ -8,10 +7,9 @@ import { useMappedValue } from "../hooks/useMapedValue"
 import Opacity from "../components/opacity/opacity"
 import useWindowDimensions from "../hooks/useWindowDimensions"
 import Layout from "../components/layout/layout"
-import Header, { HeaderType } from "../components/header/header"
+import Header from "../components/header/header"
 import ServicesList from "../components/page-components/start/services-list/services-list"
 import AppearAnimation from "../animations/appear.animation"
-
 import StartPageFooter from "../components/page-components/start/footer/start-page-footer"
 import { IntroText } from "../components/intro-text/intro-text.styled"
 import { HeroHeadline } from "../components/hero-headline/hero-headline"
@@ -20,10 +18,6 @@ import PageHeroTitle from "../components/page-hero-title/page-hero-title"
 import PageTitle from "../components/page-title/page-title"
 import TechList from "../components/page-components/start/tech-list/tech-list"
 import ScrollDownIcon from "../components/ScrollDownIcon/scroll-down-icon"
-import { CenterMargin } from "../components/center-margin/center-margin.styled"
-import { ParagraphStyled } from "../components/pragraph/pragraph.style"
-import MainButton from "../components/main-button/main-button"
-import { LetsChat } from "./contact"
 import LetsChatSection from "../components/page-components/start/lets-chat/lets-chat"
 
 const StartPage = () => {
@@ -37,7 +31,7 @@ const StartPage = () => {
   // const mappedScaleValue = useMappedValue(1, 4, 350, windowDimensions.height)
   return (
     <div>
-      <SEO title="Home" />
+      <SEO title="Start" />
       <Header />
       <PageTitle title={"Home"} />
       <main>
