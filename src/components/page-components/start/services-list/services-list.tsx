@@ -73,7 +73,7 @@ const ServicesList = () => {
             </ParagraphStyled>
           </LiAnimated>
           <LiAnimated key={"Process"} duration={700}>
-            <h3>Design</h3>
+            <h3>UI/UX</h3>
             <ParagraphStyled>
               Before starting to develop I make sure I understand the needs and
               requirements for the project. Therefore I ask a lot of questions
@@ -81,7 +81,7 @@ const ServicesList = () => {
             </ParagraphStyled>
           </LiAnimated>
           <LiAnimated key={"Prototyping"} duration={700}>
-            <h3>DevOps</h3>
+            <h3>Design</h3>
             <ParagraphStyled>
               After understanding all requirements I sketch out the first design
               and test it for functionality. Then I create a quick prototype. I
