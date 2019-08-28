@@ -61,11 +61,13 @@ const StartPage = () => {
                         }}
                       >
                         <IntroText>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Explicabo, ratione, reiciendis. Amet animi at
-                          culpa cupiditate, debitis dicta dolorem esse iste,
-                          nesciunt nihil omnis provident quae quaerat, soluta
-                          ullam vero?
+                          Every business has its unique features, story and
+                          products. Technologies should support and enhance it,
+                          especially when "technolgies" presents the business
+                          for loyal customers as well as portential ones. This
+                          is why I pay so much attention to understanding the
+                          business design and complementing it with a web
+                          solution respectively, unique solution.
                         </IntroText>
                       </div>
                     </AppearAnimation>
