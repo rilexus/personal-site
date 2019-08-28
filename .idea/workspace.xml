@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9301b2-d386-4578-9223-d9fbcf10fe81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/animations/appear.animation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations/appear.animation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animations/slide-up.animation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations/slide-up.animation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon-component.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon-component.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/start.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/start.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/start.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="313">
+              <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/animations/appear.animation.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            <state relative-caret-position="401">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -105,8 +105,6 @@
         <option value="$PROJECT_DIR$/src/components/Tooltip/Tooltip.tsx" />
         <option value="$PROJECT_DIR$/src/components/intro-text/intro-text.styled.ts" />
         <option value="$PROJECT_DIR$/src/components/ScrollDownIcon/ScrollDownIcon.tsx" />
-        <option value="$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon-component.style.scss" />
-        <option value="$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon.tsx" />
         <option value="$PROJECT_DIR$/src/components/header/header.tsx" />
         <option value="$PROJECT_DIR$/src/components/hero-headline/hero-headline.ts" />
         <option value="$PROJECT_DIR$/src/components/center-margin/center-margin.styled.ts" />
@@ -132,9 +130,11 @@
         <option value="$PROJECT_DIR$/src/components/seo.tsx" />
         <option value="$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/pages/start.tsx" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/animations/slide-up.animation.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon-component.style.scss" />
+        <option value="$PROJECT_DIR$/src/pages/start.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon.tsx" />
         <option value="$PROJECT_DIR$/src/animations/appear.animation.tsx" />
       </list>
     </option>
@@ -284,9 +284,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.develop" />
         <item itemvalue="npm.serve" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.develop" />
       </list>
     </recent_temporary>
   </component>
@@ -309,12 +309,12 @@
       <workItem from="1566918097522" duration="7490000" />
       <workItem from="1566981716407" duration="2398000" />
       <workItem from="1566987510004" duration="229000" />
-      <workItem from="1567000414019" duration="9300000" />
+      <workItem from="1567000414019" duration="9943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58764000" />
+    <option name="totallyTimeSpent" value="59407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -453,23 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon-component.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -749,16 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/start.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/animations/slide-up.animation.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -766,10 +739,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon-component.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScrollDownIcon/scroll-down-icon.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/start.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/animations/appear.animation.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        <state relative-caret-position="401">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

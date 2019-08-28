@@ -26,7 +26,8 @@ import styled from "styled-components"
 //     }),
 //   },
 // })
-const Animation = styled.div`
+
+const Animation = styled.div<{ duration: number; pose: string; delay: number }>`
   transition: transform ${({ duration }) => duration}ms,
     opacity ${({ duration }) => duration}ms;
   opacity: ${({ pose }) => (pose === "visible" ? 1 : 0)};

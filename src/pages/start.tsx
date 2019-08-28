@@ -20,6 +20,19 @@ import TechList from "../components/page-components/start/tech-list/tech-list"
 import ScrollDownIcon from "../components/ScrollDownIcon/scroll-down-icon"
 import LetsChatSection from "../components/page-components/start/lets-chat/lets-chat"
 import { CenterMargin } from "../components/center-margin/center-margin.styled"
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+  position: absolute;
+  display: block;
+  height: 60px;
+  width: 35px;
+  left: 50%;
+  top: 70vh;
+  opacity: 1;
+  transition: all 0.4s;
+  transform: translate(-50%, 100%);
+`
 
 const StartPage = () => {
   const windowDimensions = useWindowDimensions()
@@ -70,7 +83,11 @@ const StartPage = () => {
                   </Opacity>
                 </Align>
               </Sticky>
-              <ScrollDownIcon />
+              <Wrapper>
+                <AppearAnimation duration={1000} delay={2200}>
+                  <ScrollDownIcon />
+                </AppearAnimation>
+              </Wrapper>
             </Viewport>
           </section>
           <ServicesList />
