@@ -19,6 +19,7 @@ import PageTitle from "../components/page-title/page-title"
 import TechList from "../components/page-components/start/tech-list/tech-list"
 import ScrollDownIcon from "../components/ScrollDownIcon/scroll-down-icon"
 import LetsChatSection from "../components/page-components/start/lets-chat/lets-chat"
+import { CenterMargin } from "../components/center-margin/center-margin.styled"
 
 const StartPage = () => {
   const windowDimensions = useWindowDimensions()
@@ -54,22 +55,17 @@ const StartPage = () => {
                       <HeroSubtitle>web development solution</HeroSubtitle>
                     </AppearAnimation>
                     <AppearAnimation duration={1000} delay={1800}>
-                      <div
-                        style={{
-                          margin: "0 auto",
-                          maxWidth: "670px",
-                        }}
-                      >
+                      <CenterMargin>
                         <IntroText>
                           Every business has its unique features, story and
                           products. Technologies should support and enhance it,
-                          especially when "technolgies" presents the business
-                          for loyal customers as well as portential ones. This
-                          is why I pay so much attention to understanding the
+                          especially when "technolgies" presents the business to
+                          loyal customers as well as to portential ones. This is
+                          why I pay so much attention to understanding the
                           business design and complementing it with a web
                           solution respectively, unique solution.
                         </IntroText>
-                      </div>
+                      </CenterMargin>
                     </AppearAnimation>
                   </Opacity>
                 </Align>

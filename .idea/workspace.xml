@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9301b2-d386-4578-9223-d9fbcf10fe81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animations/appear.animation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations/appear.animation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animations/slide-up.animation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations/slide-up.animation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/start.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/start.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/start.tsx">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/animations/appear.animation.tsx">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="237">
-              <caret line="63" column="374" selection-start-line="63" selection-start-column="374" selection-end-line="63" selection-end-column="374" />
+              <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -30,31 +45,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="-59">
+              <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx">
+        <entry file="file://$PROJECT_DIR$/src/animations/slide-up.animation.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+            <state relative-caret-position="34">
+              <caret line="5" selection-start-line="5" selection-end-line="19" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -90,7 +93,6 @@
         <option value="$PROJECT_DIR$/src/components/list/list-title/list-title.ts" />
         <option value="$PROJECT_DIR$/src/pages/index.tsx" />
         <option value="$PROJECT_DIR$/src/hooks/useAppearedInView.ts" />
-        <option value="$PROJECT_DIR$/src/animations/appear.animation.tsx" />
         <option value="$PROJECT_DIR$/src/hooks/useAppearFromBottom.ts" />
         <option value="$PROJECT_DIR$/src/hooks/useAppearFromTop.ts" />
         <option value="$PROJECT_DIR$/src/components/layout/layout.css" />
@@ -110,7 +112,6 @@
         <option value="$PROJECT_DIR$/src/components/center-margin/center-margin.styled.ts" />
         <option value="$PROJECT_DIR$/src/pages/contact.tsx" />
         <option value="$PROJECT_DIR$/src/animations/fadein.acnimation.tsx" />
-        <option value="$PROJECT_DIR$/src/animations/slide-up.animation.tsx" />
         <option value="$PROJECT_DIR$/src/components/main-button/main-button.tsx" />
         <option value="$PROJECT_DIR$/src/components/page-components/start/lets-chat/lets-chat.tsx" />
         <option value="$PROJECT_DIR$/gatsby-browser.js" />
@@ -129,10 +130,12 @@
         <option value="$PROJECT_DIR$/src/components/page-components/start/footer/start-page-footer.tsx" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/seo.tsx" />
-        <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/pages/start.tsx" />
+        <option value="$PROJECT_DIR$/gatsby-config.js" />
+        <option value="$PROJECT_DIR$/src/animations/slide-up.animation.tsx" />
+        <option value="$PROJECT_DIR$/src/animations/appear.animation.tsx" />
       </list>
     </option>
   </component>
@@ -248,7 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.serve">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -281,9 +284,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.serve" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.develop" />
-        <item itemvalue="npm.serve" />
       </list>
     </recent_temporary>
   </component>
@@ -306,24 +309,24 @@
       <workItem from="1566918097522" duration="7490000" />
       <workItem from="1566981716407" duration="2398000" />
       <workItem from="1566987510004" duration="229000" />
-      <workItem from="1567000414019" duration="7217000" />
+      <workItem from="1567000414019" duration="9300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56681000" />
+    <option name="totallyTimeSpent" value="58764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21111111" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21111111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49791667" weight="0.23501763" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6944444" visible="true" weight="0.30082256" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6944444" visible="true" weight="0.30082256" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -346,16 +349,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/hooks/useAppearFromBottom.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hooks/useAppearedInView.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -494,25 +487,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/main-button/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/animations/appear.animation.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/animations/fadein.acnimation.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/main-button/main-button.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -530,13 +504,6 @@
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/animations/slide-up.animation.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -731,13 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/seo.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -748,23 +708,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/gatsby-icon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -772,10 +715,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/animations/fadein.acnimation.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-pose/lib/posed.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/start.tsx">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/animations/slide-up.animation.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" selection-start-line="5" selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/animations/appear.animation.tsx">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
-          <caret line="63" column="374" selection-start-line="63" selection-start-column="374" selection-end-line="63" selection-end-column="374" />
+          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
