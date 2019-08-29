@@ -1,10 +1,7 @@
 import * as React from "react"
-import posed, { PoseGroup } from "react-pose"
 import styled from "styled-components"
 import BlurBackground from "../blur-background/blur-background"
-import useScrollPosition from "../../hooks/useScrollPosition"
 import useWindowDimensions from "../../hooks/useWindowDimensions"
-import Opacity from "../opacity/opacity"
 import { useMappedValue } from "../../hooks/useMapedValue"
 
 interface PageTitlePropsI {
@@ -25,11 +22,10 @@ const TitleStyled = styled.div`
   font-size: 21px;
   line-height: 1.14286;
   font-weight: 600;
-  padding: 15px 0 0 0;
+  padding: 15px 0 0 25px;
   letter-spacing: 0.011em;
 `
 const PageTitle = ({ title }: PageTitlePropsI) => {
-  // const scrollPos = useScrollPosition();
   const windowDimension = useWindowDimensions()
   const mappedOPacity = useMappedValue(
     0,

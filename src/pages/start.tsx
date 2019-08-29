@@ -21,6 +21,7 @@ import ScrollDownIcon from "../components/ScrollDownIcon/scroll-down-icon"
 import LetsChatSection from "../components/page-components/start/lets-chat/lets-chat"
 import { CenterMargin } from "../components/center-margin/center-margin.styled"
 import styled from "styled-components"
+import HeroBackground from "../components/page-components/start/hero-background/hero-background"
 
 const Wrapper = styled.div`
   position: absolute;
@@ -48,6 +49,9 @@ const StartPage = () => {
       <SEO title="Start" />
       <Header />
       <PageTitle title={"Home"} />
+      <Opacity opacity={mappedOpacityValue}>
+        <HeroBackground />
+      </Opacity>
       <main>
         <Layout>
           <section>

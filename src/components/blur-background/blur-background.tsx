@@ -29,16 +29,26 @@ interface BlurBackgroundPropsI {
   blur: number
   backgroundColor: string
 }
+
+const Styled = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+`
+
 const BlurBackground = ({
   children,
   blur,
   backgroundColor,
 }: BlurBackgroundPropsI) => {
   return (
-    <div>
-      <BlurBackgroundStyled blur={blur} backgroundColor={backgroundColor} />
-      <ContentWrapper>{children}</ContentWrapper>
-    </div>
+    <Styled>
+      <BlurBackgroundStyled blur={blur} backgroundColor={backgroundColor}>
+        <ContentWrapper>{children}</ContentWrapper>
+      </BlurBackgroundStyled>
+    </Styled>
   )
 }
 

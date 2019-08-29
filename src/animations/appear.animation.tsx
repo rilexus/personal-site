@@ -1,31 +1,7 @@
 import * as React from "react"
-import posed, { PoseGroup } from "react-pose"
-import { ReactNode, useEffect, useState } from "react"
+import { ReactNode } from "react"
 import useSignal from "../hooks/useSignal"
 import styled from "styled-components"
-
-// const Animation = posed.div({
-//   init: {
-//     opacity: 0,
-//     y: 20,
-//   },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: ({ duration, delay }) => ({
-//       y: { ease: "easeOut", duration: duration, delay },
-//       opacity: { duration: duration, delay },
-//     }),
-//   },
-//   hidden: {
-//     opacity: 0,
-//     y: 20,
-//     transition: ({ duration, delay }) => ({
-//       y: { ease: "easeOut", duration: duration, delay },
-//       opacity: { duration: duration, delay },
-//     }),
-//   },
-// })
 
 const Animation = styled.div<{ duration: number; pose: string; delay: number }>`
   transition: transform ${({ duration }) => duration}ms,

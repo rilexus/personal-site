@@ -4,6 +4,7 @@ import { ReactNode } from "react"
 
 const Styled = styled.div<{ height: string }>`
   min-height: ${({ height }) => height};
+  position: relative;
 `
 interface ViewportPropsI {
   height: string
