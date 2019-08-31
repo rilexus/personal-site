@@ -1,21 +1,5 @@
 import * as React from "react"
 import { ReactNode } from "react"
-import posed from "react-pose"
-
-const Animation = posed.div({
-  visible: {
-    opacity: 1,
-    transition: ({ duration }) => ({
-      opacity: { duration },
-    }),
-  },
-  hidden: {
-    opacity: 0,
-    transition: ({ duration }) => ({
-      opacity: { duration },
-    }),
-  },
-})
 
 interface FadeinAnimationPropsI {
   duration: number
@@ -28,9 +12,14 @@ const FadeinAnimation = ({
   animate,
 }: FadeinAnimationPropsI) => {
   return (
-    <Animation duration={duration} pose={animate ? "visible" : "hidden"}>
+    <div
+      style={{
+        transition: `opacity ${duration}ms`,
+        opacity: animate ? 1 : 0,
+      }}
+    >
       {children}
-    </Animation>
+    </div>
   )
 }
 export default FadeinAnimation

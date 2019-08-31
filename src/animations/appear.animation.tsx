@@ -1,35 +1,32 @@
 import * as React from "react"
-import { ReactNode } from "react"
-import useSignal from "../hooks/useSignal"
-import styled from "styled-components"
+import { ReactNode, useEffect, useState } from "react"
 
-const Animation = styled.div<{ duration: number; pose: string; delay: number }>`
-  transition: transform ${({ duration }) => duration}ms,
-    opacity ${({ duration }) => duration}ms;
-  opacity: ${({ pose }) => (pose === "visible" ? 1 : 0)};
-  transition-delay: ${({ delay }) => delay}ms;
-  transform: translateY(${({ pose }) => (pose === "visible" ? 0 : "20%")});
-`
 interface AppearAnimationPropsI {
   children: ReactNode | ReactNode[]
   duration: number
   delay: number
 }
+
 const AppearAnimation = ({
   children,
   duration,
   delay,
 }: AppearAnimationPropsI) => {
-  const animate = useSignal(0)
+  const [animate, setAnimate] = useState(false)
+  useEffect(() => {
+    setAnimate(true)
+  }, [])
   return (
-    <Animation
-      key={"appear-animation"}
-      pose={animate ? "visible" : "hidden"}
-      duration={duration}
-      delay={delay}
+    <div
+      style={{
+        transition: `transform ${duration}ms, opacity ${duration}ms`,
+        transitionDelay: `${delay}ms`,
+        opacity: animate ? 1 : 0,
+        transform: `translateY(${animate ? "0%" : "20%"})`,
+      }}
     >
       {children}
-    </Animation>
+    </div>
   )
 }
 

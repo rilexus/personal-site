@@ -8,7 +8,6 @@ import Viewport from "../../../viewport/viewport"
 import styled from "styled-components"
 import FadeinAnimation from "../../../../animations/fadein.acnimation"
 import { useRef } from "react"
-import { useIsInView } from "../../../../hooks/useIsinView"
 import SlideUpAnimation from "../../../../animations/slide-up.animation"
 import { useAppearFromBottom } from "../../../../hooks/useAppearFromBottom"
 

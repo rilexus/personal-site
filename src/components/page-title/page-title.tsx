@@ -7,9 +7,8 @@ import { useMappedValue } from "../../hooks/useMapedValue"
 interface PageTitlePropsI {
   title: string
 }
-const Style = styled.div<{ opacity: number }>`
+const Style = styled.div`
   font-size: 1.3rem;
-  opacity: ${({ opacity }) => opacity || 0};
   font-weight: 900;
   height: 55px;
   position: sticky;
@@ -34,7 +33,12 @@ const PageTitle = ({ title }: PageTitlePropsI) => {
     windowDimension.height * 2
   )
   return (
-    <Style key={"page-title"} opacity={mappedOPacity}>
+    <Style
+      key={"page-title"}
+      style={{
+        opacity: mappedOPacity || 0,
+      }}
+    >
       <BlurBackground blur={20} backgroundColor={"#ffffffb3"}>
         <TitleStyled>{title}</TitleStyled>
       </BlurBackground>

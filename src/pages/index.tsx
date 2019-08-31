@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout/layout"
 import useWindowDimensions from "../hooks/useWindowDimensions"
-import { useMappedValue } from "../hooks/useMapedValue"
 import SEO from "../components/seo"
 import Header from "../components/header/header"
 import PageTitle from "../components/page-title/page-title"
@@ -22,6 +21,7 @@ import TechList from "../components/page-components/start/tech-list/tech-list"
 import LetsChatSection from "../components/page-components/start/lets-chat/lets-chat"
 import StartPageFooter from "../components/page-components/start/footer/start-page-footer"
 import styled from "styled-components"
+import { useMappedValue } from "../hooks/useMapedValue"
 
 const Wrapper = styled.div`
   position: absolute;
@@ -34,15 +34,15 @@ const Wrapper = styled.div`
   transition: all 0.4s;
   transform: translate(-50%, 100%);
 `
+
 const IndexPage = () => {
   const windowDimensions = useWindowDimensions()
   const mappedOpacityValue = useMappedValue(
     1,
     0,
-    350,
+    0,
     windowDimensions.height * 2
   )
-  // const mappedScaleValue = useMappedValue(1, 4, 350, windowDimensions.height)
   return (
     <div>
       <SEO title="Start" />

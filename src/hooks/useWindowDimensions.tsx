@@ -13,14 +13,21 @@ export default function useWindowDimensions() {
   function handleResize() {
     setSize(getSize())
   }
-
   useEffect(() => {
     if (!isClient) return
     window.addEventListener("resize", handleResize)
     return function() {
       window.removeEventListener("resize", handleResize)
     }
-  }, [size]) // clean only size has changed
+  }, [])
+  // remove if no bugs occurred
+  // useEffect(() => {
+  //   if (!isClient) return
+  //   window.addEventListener("resize", handleResize)
+  //   return function() {
+  //     window.removeEventListener("resize", handleResize)
+  //   }
+  // }, [size]) // clean only size has changed
 
   return size || getSize()
 }
