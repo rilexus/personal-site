@@ -3,9 +3,7 @@ import Layout from "../components/layout/layout"
 import useWindowDimensions from "../hooks/useWindowDimensions"
 import SEO from "../components/seo"
 import Header from "../components/header/header"
-import PageTitle from "../components/page-title/page-title"
 import Opacity from "../components/opacity/opacity"
-import HeroBackground from "../components/page-components/start/hero-background/hero-background"
 import Viewport from "../components/viewport/viewport"
 import Sticky from "../components/sticky/sticky"
 import Align from "../components/align/align"
@@ -21,7 +19,9 @@ import TechList from "../components/page-components/start/tech-list/tech-list"
 import LetsChatSection from "../components/page-components/start/lets-chat/lets-chat"
 import StartPageFooter from "../components/page-components/start/footer/start-page-footer"
 import styled from "styled-components"
-import { useMappedValue } from "../hooks/useMapedValue"
+import { EasingFunctionNames, useMappedValue } from "../hooks/useMapedValue"
+import HeroBackground from "../components/page-components/start/hero-background/hero-background"
+import PageTitle from "../components/page-title/page-title"
 
 const Wrapper = styled.div`
   position: absolute;
@@ -36,13 +36,15 @@ const Wrapper = styled.div`
 `
 
 const IndexPage = () => {
-  const windowDimensions = useWindowDimensions()
+  const { height } = useWindowDimensions()
   const mappedOpacityValue = useMappedValue(
     1,
     0,
     0,
-    windowDimensions.height * 2
+    height * 2,
+    EasingFunctionNames.expoIn
   )
+
   return (
     <div>
       <SEO title="Start" />

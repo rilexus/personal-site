@@ -13,7 +13,6 @@ module.exports = {
     ogLocality: 'Aachen Germany'
   },
   plugins: [
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-typescript`,
       options: {

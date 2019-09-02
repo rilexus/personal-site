@@ -1,5 +1,5 @@
 import * as React from "react"
-import "./scroll-down-icon-component.style.scss"
+import "./style.css"
 import useScrollPosition from "../../hooks/useScrollPosition"
 import posed from "react-pose"
 
