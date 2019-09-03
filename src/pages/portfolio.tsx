@@ -13,32 +13,14 @@ const Portfolio = () => {
   return (
     <div>
       <SEO title="Portfolio" />
-      <div
-        style={{
-          // remove header from page flow
-          position: "absolute",
-          top: 0,
-          width: "100%",
-        }}
-      >
-        <Header />
-      </div>
-      <div
-        style={{
-          // push view to the top of screen
-          position: "absolute",
-          top: 0,
-          width: "100%",
-        }}
-      >
-        <Center>
-          <PageTitle title={"Portfolio"} />
-          <ScalingView />
-          <Viewport height={"280vh"}>
-            <div>ssome</div>
-          </Viewport>
-        </Center>
-      </div>
+      <Header />
+      <PageTitle title={"Portfolio"} />
+      <Center>
+        <ScalingView />
+        <Viewport height={"280vh"}>
+          <div>ssome</div>
+        </Viewport>
+      </Center>
     </div>
   )
 }

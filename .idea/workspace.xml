@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9301b2-d386-4578-9223-d9fbcf10fe81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/page-components/portfolio/hero/portfolio-hero-title.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/page-components/portfolio/screen-contntent/screen-contntent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page-components/hero/portfolio-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/hero/portfolio-hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animations/appear.animation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations/appear.animation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animations/fadein.acnimation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations/fadein.acnimation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-components/hero/portfolio-hero.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/page-components/portfolio/portfolio-scaling-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/portfolio/portfolio-scaling-view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sticky/sticky.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sticky/sticky.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portfolio.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,17 +47,17 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/page-components/portfolio" />
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src/components/page-components" />
+      <recent name="$PROJECT_DIR$/src/components/list" />
+      <recent name="$PROJECT_DIR$/src/components/layout" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/hooks" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/page-components" />
-      <recent name="$PROJECT_DIR$/src/components/list" />
-      <recent name="$PROJECT_DIR$/src/components/layout" />
-      <recent name="$PROJECT_DIR$/src/pages" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -136,7 +143,7 @@
       <workItem from="1567454192420" duration="3185000" />
       <workItem from="1567457421112" duration="185000" />
       <workItem from="1567458262067" duration="170000" />
-      <workItem from="1567497413509" duration="8744000" />
+      <workItem from="1567497413509" duration="21778000" />
     </task>
     <servers />
   </component>

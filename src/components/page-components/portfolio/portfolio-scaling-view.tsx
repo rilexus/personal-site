@@ -7,12 +7,19 @@ import {
   EasingFunctionNames,
   useMapScrollToValue,
 } from "../../../hooks/useMapedValue"
-import PortfolioPageHero from "../hero/portfolio-hero"
+import screen_mockup_img from "./../../../images/imac_mockup.png"
+import { HeroHeadline } from "../../hero-headline/hero-headline"
+import PageHeroTitle from "../../page-hero-title/page-hero-title"
+import FadeinAnimation from "../../../animations/fadein.acnimation"
+import SlideUpAnimation from "../../../animations/slide-up.animation"
+import PortfolioPageHeroTitle from "./hero/portfolio-hero-title"
+import ScreenContent from "./screen-contntent/screen-contntent"
 
-const Scale = ({ scale, children, height, width }) => {
+const Scale = ({ scale, children, height, width, style }) => {
   return (
     <div
       style={{
+        ...style,
         transform: `scale(${scale})`,
         width: `${width}px`,
         height: `${height}px`,
@@ -24,104 +31,70 @@ const Scale = ({ scale, children, height, width }) => {
   )
 }
 
-const HeroScaleContent = styled.div`
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+const IMGFigure = styled.figure<{ url: string }>`
+    background-repeat: no-repeat;
+    background-image: url("${({ url }) => url}");
+    position: relative;
+    left: 50%;
+    margin-left: -951.5px;
 `
-const HeroScaleWrapper = ({ scale, children, height, width }) => {
-  return (
-    <Scale height={height} width={width} scale={scale}>
-      <HeroScaleContent>{children}</HeroScaleContent>
-    </Scale>
-  )
-}
+
+const ContentWindow = styled.div`
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  bottom: 321px;
+  right: 40px;
+`
+const InnerContent = styled.div<{ url: string }>`
+  position: absolute;
+  width: 1813px;
+  height: 1043px;
+
+  background-color: black;
+  z-index: 3;
+`
 const ScalingView = () => {
   const { height: windowHeight, width: windowWidth } = useWindowDimensions()
-
   const animationPxDistance = windowHeight * 3
-
-  const pictureEndScaleValue = 0.3
+  const pictureEndScaleValue = 0.5
   const pictureScalingEndPosition = windowHeight
 
-  const screenScaleValue = pictureEndScaleValue + 0.1
-  const screenViewportHeight = windowHeight * 2
-  const screenAppearPos = pictureScalingEndPosition
-
   const pictureMappedScaleValue = useMapScrollToValue(
-    1,
+    1.07,
     pictureEndScaleValue,
     0,
     pictureScalingEndPosition,
     EasingFunctionNames.sineOut
   )
   return (
-    <Viewport
-      /* whole scale animation height */
-      height={`${animationPxDistance}px`}
-    >
-      <div
-        /*
-         * push picture and screen image animation area over each other (overlap)
-         * put screen image on top to appear before picture on the screen
-         * */
-        style={{
-          position: "absolute",
-          top: "0",
-          left: "0",
-          width: "100%",
-        }}
-      >
-        <Viewport
-          height={`${screenAppearPos}px`}
-          /*
-           * scroll distance from top at this point picture mapped
-           * value reached its end value (stopped scaling) and the
-           * "screen" image appears from the bottom
-           */
-        />
-        <Viewport
-          // screen image wrapper height
-          height={`${screenViewportHeight}px`}
+    <Viewport height={`${animationPxDistance}px`}>
+      <Sticky top={`${0}px`} style={{ textAlign: "center" }}>
+        <PortfolioPageHeroTitle />
+        <div
+          style={{
+            position: "relative",
+            overflow: "hidden",
+          }}
         >
-          <Sticky top={`${0}px`}>
-            <div
+          <Scale scale={pictureMappedScaleValue}>
+            <IMGFigure
+              url={screen_mockup_img}
               style={{
-                display: "inline-block",
-                transform: `scale(${screenScaleValue})`,
-                width: `${windowWidth}px`,
-                height: `${windowHeight}px`,
-                backgroundColor: "red",
+                width: `${1903}px`,
+                height: `${1412}px`,
+                backgroundSize: `${1903}px ${1412}px`,
               }}
             >
-              s
-            </div>
-          </Sticky>
-        </Viewport>
-      </div>
-      <div
-        // push picture and screen image animation area over each other (overlap)
-        style={{
-          position: "absolute",
-          top: "0",
-          left: "0",
-          width: "100%",
-        }}
-      >
-        <Viewport height={`${animationPxDistance}px`}>
-          <Sticky top={`${0}px`}>
-            <HeroScaleWrapper
-              scale={pictureMappedScaleValue}
-              width={windowWidth}
-              height={windowHeight}
-            >
-              <PortfolioPageHero />
-            </HeroScaleWrapper>
-          </Sticky>
-        </Viewport>
-      </div>
+              <ContentWindow>
+                <InnerContent>
+                  <ScreenContent />
+                </InnerContent>
+              </ContentWindow>
+            </IMGFigure>
+          </Scale>
+        </div>
+      </Sticky>
     </Viewport>
   )
 }
