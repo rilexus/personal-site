@@ -2,7 +2,7 @@ import * as React from "react"
 import styled from "styled-components"
 import BlurBackground from "../blur-background/blur-background"
 import useWindowDimensions from "../../hooks/useWindowDimensions"
-import { useMappedValue } from "../../hooks/useMapedValue"
+import { useMapScrollToValue } from "../../hooks/useMapedValue"
 
 interface PageTitlePropsI {
   title: string
@@ -11,7 +11,8 @@ const Style = styled.div`
   font-size: 1.3rem;
   font-weight: 900;
   height: 55px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
   padding: 0 25px 0 25px;
@@ -26,7 +27,7 @@ const TitleStyled = styled.div`
 `
 const PageTitle = ({ title }: PageTitlePropsI) => {
   const windowDimension = useWindowDimensions()
-  const mappedOPacity = useMappedValue(
+  const mappedOPacity = useMapScrollToValue(
     0,
     1,
     windowDimension.height,
@@ -37,6 +38,7 @@ const PageTitle = ({ title }: PageTitlePropsI) => {
       key={"page-title"}
       style={{
         opacity: mappedOPacity || 0,
+        textAlign: "left",
       }}
     >
       <BlurBackground blur={20} backgroundColor={"#ffffffb3"}>

@@ -19,7 +19,10 @@ import TechList from "../components/page-components/start/tech-list/tech-list"
 import LetsChatSection from "../components/page-components/start/lets-chat/lets-chat"
 import StartPageFooter from "../components/page-components/start/footer/start-page-footer"
 import styled from "styled-components"
-import { EasingFunctionNames, useMappedValue } from "../hooks/useMapedValue"
+import {
+  EasingFunctionNames,
+  useMapScrollToValue,
+} from "../hooks/useMapedValue"
 import HeroBackground from "../components/page-components/start/hero-background/hero-background"
 import PageTitle from "../components/page-title/page-title"
 
@@ -37,7 +40,7 @@ const Wrapper = styled.div`
 
 const IndexPage = () => {
   const { height } = useWindowDimensions()
-  const mappedOpacityValue = useMappedValue(
+  const mappedOpacityValue = useMapScrollToValue(
     1,
     0,
     0,
