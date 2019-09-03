@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9301b2-d386-4578-9223-d9fbcf10fe81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/page-components/hero/portfolio-hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/page-components/portfolio/portfolio-scaling-view.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/portfolio.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page-title/page-title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-title/page-title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sticky/sticky.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sticky/sticky.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/viewport/viewport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/viewport/viewport.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useMapedValue.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useMapedValue.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-components/hero/portfolio-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/hero/portfolio-hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-components/portfolio/portfolio-scaling-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/portfolio/portfolio-scaling-view.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +136,7 @@
       <workItem from="1567454192420" duration="3185000" />
       <workItem from="1567457421112" duration="185000" />
       <workItem from="1567458262067" duration="170000" />
-      <workItem from="1567497413509" duration="7552000" />
+      <workItem from="1567497413509" duration="8744000" />
     </task>
     <servers />
   </component>

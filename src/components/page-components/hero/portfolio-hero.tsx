@@ -1,9 +1,7 @@
 import * as React from "react"
-import { HeroHeadline } from "../../hero-headline/hero-headline"
-import PageHeroTitle from "../../page-hero-title/page-hero-title"
 import styled from "styled-components"
 
-const Background = styled.div`
+const GIFBackground = styled.div`
   background-image: url("${"https://media.giphy.com/media/l0HlS6yEDc4eUM4E0/source.gif"}");
   position: absolute;
   left: 0;
@@ -14,16 +12,10 @@ const Background = styled.div`
   background-repeat: no-repeat;
 `
 
-// const GIFBackground = () => {
-//   return (
-//
-//   )
-// }
-
 const PortfolioPageHero = () => {
   return (
     <div>
-      <Background />
+      <GIFBackground />
     </div>
   )
 }

@@ -3,7 +3,10 @@ import Viewport from "../../viewport/viewport"
 import Sticky from "../../sticky/sticky"
 import styled from "styled-components"
 import useWindowDimensions from "../../../hooks/useWindowDimensions"
-import { useMapScrollToValue } from "../../../hooks/useMapedValue"
+import {
+  EasingFunctionNames,
+  useMapScrollToValue,
+} from "../../../hooks/useMapedValue"
 import PortfolioPageHero from "../hero/portfolio-hero"
 
 const Scale = ({ scale, children, height, width }) => {
@@ -37,15 +40,22 @@ const HeroScaleWrapper = ({ scale, children, height, width }) => {
 }
 const ScalingView = () => {
   const { height: windowHeight, width: windowWidth } = useWindowDimensions()
-  const pictureScalingEndPosition = windowHeight
-  const animationPxDistance = windowHeight * 3.5
+
+  const animationPxDistance = windowHeight * 3
+
   const pictureEndScaleValue = 0.3
+  const pictureScalingEndPosition = windowHeight
+
   const screenScaleValue = pictureEndScaleValue + 0.1
+  const screenViewportHeight = windowHeight * 2
+  const screenAppearPos = pictureScalingEndPosition
+
   const pictureMappedScaleValue = useMapScrollToValue(
     1,
     pictureEndScaleValue,
     0,
-    pictureScalingEndPosition
+    pictureScalingEndPosition,
+    EasingFunctionNames.sineOut
   )
   return (
     <Viewport
@@ -65,7 +75,7 @@ const ScalingView = () => {
         }}
       >
         <Viewport
-          height={`${pictureScalingEndPosition + 150}px`}
+          height={`${screenAppearPos}px`}
           /*
            * scroll distance from top at this point picture mapped
            * value reached its end value (stopped scaling) and the
@@ -74,7 +84,7 @@ const ScalingView = () => {
         />
         <Viewport
           // screen image wrapper height
-          height={`${windowHeight * 2.35}px`}
+          height={`${screenViewportHeight}px`}
         >
           <Sticky top={`${0}px`}>
             <div
