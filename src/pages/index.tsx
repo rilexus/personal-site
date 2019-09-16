@@ -25,6 +25,7 @@ import {
 } from "../hooks/useMapedValue"
 import HeroBackground from "../components/page-components/start/hero-background/hero-background"
 import PageTitle from "../components/page-title/page-title"
+import { useEffect } from "react"
 
 const Wrapper = styled.div`
   position: absolute;
@@ -47,6 +48,35 @@ const IndexPage = () => {
     height * 2,
     EasingFunctionNames.expoIn
   )
+  useEffect(() => {
+    console.log(
+      "─────────▄▄───────────────────▄▄──\n" +
+        "──────────▀█───────────────────▀█─\n" +
+        "──────────▄█───────────────────▄█─\n" +
+        "──█████████▀───────────█████████▀─\n" +
+        "───▄██████▄─────────────▄██████▄──\n" +
+        "─▄██▀────▀██▄─────────▄██▀────▀██▄\n" +
+        "─██────────██─────────██────────██\n" +
+        "─██───██───██─────────██───██───██\n" +
+        "─██────────██─────────██────────██\n" +
+        "──██▄────▄██───────────██▄────▄██─\n" +
+        "───▀██████▀─────────────▀██████▀──\n" +
+        "──────────────────────────────────\n" +
+        "──────────────────────────────────\n" +
+        "──────────────────────────────────\n" +
+        "───────────█████████████──────────\n" +
+        "──────────────────────────────────\n" +
+        "──────────────────────────────────"
+    )
+    console.log(
+      "%cSTOP LURKING!",
+      "color:red; font-size:2rem; font-weight:bold;"
+    )
+    console.log(
+      "%cIf you like to know how i have build this awesome website, drop me a message at mail@stanislavpanchenko.de",
+      "color:blue; font-size:.8rem;"
+    )
+  }, [])
 
   return (
     <div>

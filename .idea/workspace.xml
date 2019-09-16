@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba9301b2-d386-4578-9223-d9fbcf10fe81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero-headline/hero-headline.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero-headline/hero-headline.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero-subtitle/hero-subtitle.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero-subtitle/hero-subtitle.styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page-components/portfolio/portfolio-scaling-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/portfolio/portfolio-scaling-view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page-components/start/footer/start-page-footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/start/footer/start-page-footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/start/services-list/services-list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/portfolio.tsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +138,7 @@
       <workItem from="1567497413509" duration="22142000" />
       <workItem from="1567576729806" duration="74000" />
       <workItem from="1567628043658" duration="31000" />
-      <workItem from="1568613036897" duration="2826000" />
+      <workItem from="1568613036897" duration="3380000" />
     </task>
     <servers />
   </component>
