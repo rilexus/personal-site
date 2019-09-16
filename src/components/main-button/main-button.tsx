@@ -2,7 +2,7 @@ import React, { ReactNode, useRef } from "react"
 import styled from "styled-components"
 import { useIsInView } from "../../hooks/useIsinView"
 
-const MainButtonStyled = styled.button`
+const MainButtonStyled = styled.span`
   background-color: #272727;
   color: #e0e0e0;
   border: none;
@@ -13,7 +13,7 @@ const MainButtonStyled = styled.button`
   font-size: 0.8rem;
   font-weight: 600;
   padding: 15px 35px;
-  cursor: pointer;
+  // cursor: pointer;
   transition: transform 200ms, box-shadow 200ms;
   &:hover {
     transform: scale(0.986);
@@ -25,8 +25,8 @@ const MainButtonStyled = styled.button`
   }
 `
 interface Props {
-  children: ReactNode | ReactNode[];
-  onClick?: (e:any)=>void
+  children: ReactNode | ReactNode[]
+  onClick?: (e: any) => void
 }
 const MainButton = ({ children, onClick }: Props) => {
   const ref = useRef(null)

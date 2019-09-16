@@ -55,7 +55,7 @@ const Contact = () => {
                     "https://media.giphy.com/media/3o6ZtrcBDLanIMbdRe/source.gif"
                   }
                 >
-                  <HeroHeadline fontSize={"6rem"}>MAIL ME</HeroHeadline>
+                  <HeroHeadline fontSize={"6rem"}>Call Me</HeroHeadline>
                 </PageHeroTitle>
               </GrowAnimation>
             </PoseGroup>
@@ -75,11 +75,7 @@ const Contact = () => {
                     practices.
                   </ParagraphStyled>
                 </CenterMargin>
-                <MainButton>
-                  <a href="mailto:mail@stanislavpanchenko.de">
-                    mail@stanislavpanchenko.de
-                  </a>
-                </MainButton>
+                <MainButton>+49 176 45840631</MainButton>
               </div>
             </GrowAnimation>
           </PoseGroup>

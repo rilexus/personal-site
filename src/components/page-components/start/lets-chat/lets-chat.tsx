@@ -45,11 +45,7 @@ const LetsChatSection = () => {
                         on best practices.
                       </ParagraphStyled>
                     </CenterMargin>
-                    <MainButton>
-                      <a href="mailto:mail@stanislavpanchenko.de">
-                        mail@stanislavpanchenko.de
-                      </a>
-                    </MainButton>
+                    <MainButton>+49 176 45840631</MainButton>
                   </SlideUpAnimation>
                 </FadeinAnimation>
               </div>
