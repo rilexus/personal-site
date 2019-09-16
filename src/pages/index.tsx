@@ -73,7 +73,7 @@ const IndexPage = () => {
       "color:red; font-size:2rem; font-weight:bold;"
     )
     console.log(
-      "%cIf you like to know how i have build this awesome website, drop me a message at mail@stanislavpanchenko.de",
+      "%cIf you like to know how i have build this awesome website, drop me a message.",
       "color:blue; font-size:.8rem;"
     )
   }, [])
