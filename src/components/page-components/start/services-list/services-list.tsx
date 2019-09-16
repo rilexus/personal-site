@@ -47,8 +47,8 @@ const ServicesList = () => {
           padding: "0 5vw 0 5vw",
         }}
       >
-        <ListTitleStyled>I provide</ListTitleStyled>
-        <ListSubtitleStyled>Fullstack Service</ListSubtitleStyled>
+        <ListTitleStyled>I work as</ListTitleStyled>
+        <ListSubtitleStyled>Fullstack Developer</ListSubtitleStyled>
         <UlAnimated
           ref={listAnimationRef}
           staggerChildren={200}
@@ -57,35 +57,35 @@ const ServicesList = () => {
           <LiAnimated key={"Practice"} duration={700}>
             <h3>Frontend</h3>
             <ParagraphStyled>
-              I’m a programmer who knows design. I know best practices from both
-              worlds and combine them in frontend development and UX/XD. I work
-              close with designers and programmers. I believe that
-              communication, constructive criticism a safe team environment are
-              the keys to success.
+              I’m a programmer with good understanding of UX and user needs. I
+              know best practices from programmer and designer point of view and
+              I combine them in my development process.
             </ParagraphStyled>
           </LiAnimated>
           <LiAnimated key={"Full Stack"} duration={700}>
             <h3>Backend</h3>
             <ParagraphStyled>
-              I am competent in backend technologies as well as frontend and
-              design. I work equally well in a team or develop a project
-              completely on my own.
+              I am competent in backend technologies as well as frontend and I
+              work equally well with people from both sides.
             </ParagraphStyled>
           </LiAnimated>
           <LiAnimated key={"Process"} duration={700}>
             <h3>UI/UX</h3>
             <ParagraphStyled>
-              Before starting to develop I make sure I understand the needs and
-              requirements for the project. Therefore I ask a lot of questions
-              and interview future users.
+              Before starting to develop it is essential to understand the needs
+              and requirements for the project. Therefore its crucial to
+              communicate with stack holders and future users. Only this way its
+              possible to develop a valuable solution!
             </ParagraphStyled>
           </LiAnimated>
           <LiAnimated key={"Prototyping"} duration={700}>
             <h3>Design</h3>
             <ParagraphStyled>
-              After understanding all requirements I sketch out the first design
-              and test it for functionality. Then I create a quick prototype. I
-              say: "A prototype tells more than 100 sketches"
+              Design is a repetitive process. To adjust the products
+              functionality to the users core needs, it necessary to create
+              prototypes and to iterate through design sketches. I’m convinced
+              that a quick prototype and a rough sketch always saves a lot of
+              development hours.
             </ParagraphStyled>
           </LiAnimated>
         </UlAnimated>

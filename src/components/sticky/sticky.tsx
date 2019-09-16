@@ -1,16 +1,27 @@
 import * as React from "react"
-import { ReactNode } from "react"
+import { CSSProperties, ReactNode } from "react"
 import styled from "styled-components"
 
-const Styled = styled.div<{ top: string }>`
+const Styled = styled.div`
   position: sticky;
-  top: ${({ top }) => top};
 `
 interface StickyPropsI {
   children: ReactNode | ReactNode[]
-  top: string
+  top?: string
+  bottom?: string
+  style?: CSSProperties
 }
-const Sticky = ({ children, top }: StickyPropsI) => {
-  return <Styled top={top}>{children}</Styled>
+const Sticky = ({ style, children, top, bottom }: StickyPropsI) => {
+  return (
+    <Styled
+      style={{
+        ...style,
+        top: top ? top : null,
+        bottom: bottom ? bottom : null,
+      }}
+    >
+      {children}
+    </Styled>
+  )
 }
 export default Sticky

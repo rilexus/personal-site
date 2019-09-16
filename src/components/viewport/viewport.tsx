@@ -1,6 +1,6 @@
 import * as React from "react"
 import styled from "styled-components"
-import { ReactNode } from "react"
+import { CSSProperties, ReactNode } from "react"
 
 const Styled = styled.div<{ height: string }>`
   min-height: ${({ height }) => height};
@@ -8,9 +8,14 @@ const Styled = styled.div<{ height: string }>`
 `
 interface ViewportPropsI {
   height: string
-  children: ReactNode | ReactNode[]
+  style?: CSSProperties
+  children?: ReactNode | ReactNode[]
 }
-const Viewport = ({ height, children }: ViewportPropsI) => {
-  return <Styled height={height}>{children}</Styled>
+const Viewport = ({ height, children, style }: ViewportPropsI) => {
+  return (
+    <Styled style={{ ...style }} height={height}>
+      {children}
+    </Styled>
+  )
 }
 export default Viewport

@@ -19,9 +19,13 @@ import TechList from "../components/page-components/start/tech-list/tech-list"
 import LetsChatSection from "../components/page-components/start/lets-chat/lets-chat"
 import StartPageFooter from "../components/page-components/start/footer/start-page-footer"
 import styled from "styled-components"
-import { EasingFunctionNames, useMappedValue } from "../hooks/useMapedValue"
+import {
+  EasingFunctionNames,
+  useMapScrollToValue,
+} from "../hooks/useMapedValue"
 import HeroBackground from "../components/page-components/start/hero-background/hero-background"
 import PageTitle from "../components/page-title/page-title"
+import { useEffect } from "react"
 
 const Wrapper = styled.div`
   position: absolute;
@@ -37,13 +41,42 @@ const Wrapper = styled.div`
 
 const IndexPage = () => {
   const { height } = useWindowDimensions()
-  const mappedOpacityValue = useMappedValue(
+  const mappedOpacityValue = useMapScrollToValue(
     1,
     0,
     0,
     height * 2,
     EasingFunctionNames.expoIn
   )
+  useEffect(() => {
+    console.log(
+      "─────────▄▄───────────────────▄▄──\n" +
+        "──────────▀█───────────────────▀█─\n" +
+        "──────────▄█───────────────────▄█─\n" +
+        "──█████████▀───────────█████████▀─\n" +
+        "───▄██████▄─────────────▄██████▄──\n" +
+        "─▄██▀────▀██▄─────────▄██▀────▀██▄\n" +
+        "─██────────██─────────██────────██\n" +
+        "─██───██───██─────────██───██───██\n" +
+        "─██────────██─────────██────────██\n" +
+        "──██▄────▄██───────────██▄────▄██─\n" +
+        "───▀██████▀─────────────▀██████▀──\n" +
+        "──────────────────────────────────\n" +
+        "──────────────────────────────────\n" +
+        "──────────────────────────────────\n" +
+        "───────────█████████████──────────\n" +
+        "──────────────────────────────────\n" +
+        "──────────────────────────────────"
+    )
+    console.log(
+      "%cSTOP LURKING!",
+      "color:red; font-size:2rem; font-weight:bold;"
+    )
+    console.log(
+      "%cIf you like to know how i have build this awesome website, drop me a message at mail@stanislavpanchenko.de",
+      "color:blue; font-size:.8rem;"
+    )
+  }, [])
 
   return (
     <div>
@@ -66,22 +99,17 @@ const IndexPage = () => {
                           "https://media.giphy.com/media/3o6ZtrcBDLanIMbdRe/source.gif"
                         }
                       >
-                        <HeroHeadline fontSize={"7rem"}>UNIQUE</HeroHeadline>
+                        <HeroHeadline fontSize={"7rem"}>UX&UI</HeroHeadline>
                       </PageHeroTitle>
                     </AppearAnimation>
                     <AppearAnimation duration={1000} delay={1400}>
-                      <HeroSubtitle>web development solution</HeroSubtitle>
+                      <HeroSubtitle>unique web solutions</HeroSubtitle>
                     </AppearAnimation>
                     <AppearAnimation duration={1000} delay={1800}>
                       <CenterMargin>
                         <IntroText>
                           Every business has its unique features, story and
-                          products. Technologies should support and enhance it,
-                          especially when "technolgies" presents the business to
-                          loyal customers as well as to portential ones. This is
-                          why I pay so much attention to understanding the
-                          business design and complementing it with a web
-                          solution respectively, unique solution.
+                          products and technology should support and enhance it.
                         </IntroText>
                       </CenterMargin>
                     </AppearAnimation>

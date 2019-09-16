@@ -53,15 +53,15 @@ function mapScrollPos(from: number, curr: number, to: number): number {
   return (curr - from) / (to - from)
 }
 
-export function useMappedValue(
+export function useMapScrollToValue(
   startValue,
   endValue,
-  fromPx,
-  toPx,
+  fromScrollPos,
+  toScrollPos,
   easingFunctionName?: EasingFunctionNames
 ) {
   const currScrollPos = useScrollPosition()
-  const mappedPos = mapScrollPos(fromPx, currScrollPos, toPx)
+  const mappedPos = mapScrollPos(fromScrollPos, currScrollPos, toScrollPos)
   if (!easingFunctionName) return lerp(startValue, endValue, mappedPos)
   const availableFunctionNames = Object.keys(eases)
   const selectedName = availableFunctionNames[easingFunctionName]

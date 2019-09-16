@@ -1,16 +1,18 @@
 import * as React from "react"
-import { ReactNode, useEffect, useState } from "react"
+import { CSSProperties, ReactNode, useEffect, useState } from "react"
 
 interface AppearAnimationPropsI {
   children: ReactNode | ReactNode[]
   duration: number
   delay: number
+  style?: CSSProperties
 }
 
 const AppearAnimation = ({
   children,
   duration,
   delay,
+  style,
 }: AppearAnimationPropsI) => {
   const [animate, setAnimate] = useState(false)
   useEffect(() => {
@@ -19,6 +21,7 @@ const AppearAnimation = ({
   return (
     <div
       style={{
+        ...style,
         transition: `transform ${duration}ms, opacity ${duration}ms`,
         transitionDelay: `${delay}ms`,
         opacity: animate ? 1 : 0,
