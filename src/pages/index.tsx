@@ -69,22 +69,17 @@ const IndexPage = () => {
                           "https://media.giphy.com/media/3o6ZtrcBDLanIMbdRe/source.gif"
                         }
                       >
-                        <HeroHeadline fontSize={"7rem"}>UNIQUE</HeroHeadline>
+                        <HeroHeadline fontSize={"7rem"}>UX&UI</HeroHeadline>
                       </PageHeroTitle>
                     </AppearAnimation>
                     <AppearAnimation duration={1000} delay={1400}>
-                      <HeroSubtitle>web development solution</HeroSubtitle>
+                      <HeroSubtitle>unique web solutions</HeroSubtitle>
                     </AppearAnimation>
                     <AppearAnimation duration={1000} delay={1800}>
                       <CenterMargin>
                         <IntroText>
                           Every business has its unique features, story and
-                          products. Technologies should support and enhance it,
-                          especially when "technolgies" presents the business to
-                          loyal customers as well as to portential ones. This is
-                          why I pay so much attention to understanding the
-                          business design and complementing it with a web
-                          solution respectively, unique solution.
+                          products and technology should support and enhance it.
                         </IntroText>
                       </CenterMargin>
                     </AppearAnimation>

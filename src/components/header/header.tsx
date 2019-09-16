@@ -40,7 +40,6 @@ const Header = ({  }: HeaderPropsI) => {
             </div>
             <LinksWrapper>
               <Link to={"/contact"}>Contact</Link>
-              <Link to={"/portfolio"}>Portfolio</Link>
             </LinksWrapper>
           </Flex>
         </HeaderContent>

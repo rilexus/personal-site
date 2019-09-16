@@ -8,10 +8,6 @@ import {
   useMapScrollToValue,
 } from "../../../hooks/useMapedValue"
 import screen_mockup_img from "./../../../images/imac_mockup.png"
-import { HeroHeadline } from "../../hero-headline/hero-headline"
-import PageHeroTitle from "../../page-hero-title/page-hero-title"
-import FadeinAnimation from "../../../animations/fadein.acnimation"
-import SlideUpAnimation from "../../../animations/slide-up.animation"
 import PortfolioPageHeroTitle from "./hero/portfolio-hero-title"
 import ScreenContent from "./screen-contntent/screen-contntent"
 
@@ -69,31 +65,8 @@ const ScalingView = () => {
   )
   return (
     <Viewport height={`${animationPxDistance}px`}>
-      <Sticky top={`${0}px`} style={{ textAlign: "center" }}>
+      <Sticky top={`${0}px`}>
         <PortfolioPageHeroTitle />
-        <div
-          style={{
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
-          <Scale scale={pictureMappedScaleValue}>
-            <IMGFigure
-              url={screen_mockup_img}
-              style={{
-                width: `${1903}px`,
-                height: `${1412}px`,
-                backgroundSize: `${1903}px ${1412}px`,
-              }}
-            >
-              <ContentWindow>
-                <InnerContent>
-                  <ScreenContent />
-                </InnerContent>
-              </ContentWindow>
-            </IMGFigure>
-          </Scale>
-        </div>
       </Sticky>
     </Viewport>
   )
