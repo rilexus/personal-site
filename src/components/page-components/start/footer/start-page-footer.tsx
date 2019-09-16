@@ -3,6 +3,9 @@ import styled from "styled-components"
 import Layout from "../../../layout/layout"
 import { ParagraphStyled } from "../../../pragraph/pragraph.style"
 import { CenterMargin } from "../../../center-margin/center-margin.styled"
+import { Icons } from "../../../../icons"
+import { IconLink } from "../../../icon-link"
+import Align from "../../../align/align"
 
 const Background = styled.div<{ opacity?: number }>`
   background-color: #fbfcfd;
@@ -19,6 +22,17 @@ const Exlpination = styled.p`
   font-size: 1.2rem;
   line-height: 1.7;
 `
+const CenterIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #c9c9c9;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  & a {
+    margin: 0 1rem 0 1rem;
+  }
+`
+
 interface StartPageFooterPropsI {}
 const StartPageFooter = ({  }: StartPageFooterPropsI) => {
   return (
@@ -44,6 +58,26 @@ const StartPageFooter = ({  }: StartPageFooterPropsI) => {
                   awesome sites.
                 </span>
               </ParagraphStyled>
+              <CenterIcon>
+                <IconLink
+                  url={"https://www.xing.com/profile/Stanislav_Panchenko/cv"}
+                >
+                  {Icons.xing}
+                </IconLink>
+                <IconLink url={"https://github.com/rilexus"}>
+                  {Icons.github}
+                </IconLink>
+                <IconLink url={"https://gitlab.com/stanpanchenko"}>
+                  {Icons.gitlab}
+                </IconLink>
+                <IconLink
+                  url={
+                    "https://www.linkedin.com/in/stanislav-panchenko-98b254192/"
+                  }
+                >
+                  {Icons.linkedin}
+                </IconLink>
+              </CenterIcon>
             </div>
           </CenterMargin>
         </Layout>
