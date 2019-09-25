@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Personal website of Stanislav Panchenko`,
-    description: `Personal website of Stanislav Panchenko`,
-    author: `Stanislav Panchenko mail@stanisalvpanchenko.de`,
+    title: `Stanislav Panchenko`,
+    description: `Personal site of Stanislav Panchenko.`,
+    author: `Stanislav Panchenko mail@stanislavpanchenko.de`,
     url: "http://www.stanislavpanchenko.de",
     twitterUsername: "@rilexus",
-    keywords: 'Stanislav Panchenko, Web Developer, Aachen, Developer, Programmierer',
+    keywords: 'stanislav sanchenko, web developer, aachen, developer, programmierer, ',
     revised: `Stanislav Panchenko: ${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`,
     identifierURL: 'www.stanislavpanchenko.de',
-    category: '',
+    category: 'development',
     rating: 'Safe For Kids',
     ogLocality: 'Aachen Germany'
   },
