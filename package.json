@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "Personal website for Stanislav Panchenko",
+  "description": "Stanislav Panchenko",
   "version": "0.1.0",
-  "author": "Stanislav Panchenko <stanisalvpanchenko@email.de>",
+  "author": "Stanislav Panchenko <email@stanislavpanchenko.de>",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
