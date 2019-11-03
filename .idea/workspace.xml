@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9301b2-d386-4578-9223-d9fbcf10fe81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/email/email.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-components/start/lets-chat/lets-chat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/start/lets-chat/lets-chat.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.develop">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -96,8 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.develop" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.serve" />
       </list>
     </recent_temporary>
@@ -141,7 +144,10 @@
       <workItem from="1568622101444" duration="2636000" />
       <workItem from="1569050242564" duration="53000" />
       <workItem from="1569267886102" duration="57000" />
-      <workItem from="1569436477813" duration="637000" />
+      <workItem from="1569436477813" duration="825000" />
+      <workItem from="1569484802987" duration="10000" />
+      <workItem from="1570864275958" duration="9000" />
+      <workItem from="1572805250026" duration="202000" />
     </task>
     <servers />
   </component>

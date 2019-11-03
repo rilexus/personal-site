@@ -10,6 +10,7 @@ import FadeinAnimation from "../../../../animations/fadein.acnimation"
 import { useRef } from "react"
 import SlideUpAnimation from "../../../../animations/slide-up.animation"
 import { useAppearFromBottom } from "../../../../hooks/useAppearFromBottom"
+import Email from "../../../email/email"
 
 const Gradient = styled.div`
   position: relative;
@@ -45,7 +46,9 @@ const LetsChatSection = () => {
                         on best practices.
                       </ParagraphStyled>
                     </CenterMargin>
-                    <MainButton>+49 176 45840631</MainButton>
+                    <MainButton>
+                      <Email />
+                    </MainButton>
                   </SlideUpAnimation>
                 </FadeinAnimation>
               </div>

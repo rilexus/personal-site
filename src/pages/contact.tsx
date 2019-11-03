@@ -11,6 +11,7 @@ import MainButton from "../components/main-button/main-button"
 import styled from "styled-components"
 import { ParagraphStyled } from "../components/pragraph/pragraph.style"
 import { CenterMargin } from "../components/center-margin/center-margin.styled"
+import Email from "../components/email/email"
 
 export const LetsChat = styled.div`
   font-size: 2.24rem;
@@ -75,7 +76,9 @@ const Contact = () => {
                     practices.
                   </ParagraphStyled>
                 </CenterMargin>
-                <MainButton>+49 176 45840631</MainButton>
+                <MainButton>
+                  <Email/>
+                </MainButton>
               </div>
             </GrowAnimation>
           </PoseGroup>
