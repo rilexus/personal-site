@@ -18,6 +18,16 @@ export const techIcons = [
       "JavaScript often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.",
   },
   {
+    name: "Node.jS",
+    width: 80,
+    height: 55,
+    url: "https://nodejs.org/en/",
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png",
+    desc:
+      'As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.',
+  },
+  {
     name: "React",
     width: 55,
     height: 55,
