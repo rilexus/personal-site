@@ -4,17 +4,6 @@
     <list default="true" id="ba9301b2-d386-4578-9223-d9fbcf10fe81" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/components/email/email.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      <change beforePath="$PROJECT_DIR$/src/components/page-components/start/lets-chat/lets-chat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-components/start/lets-chat/lets-chat.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.tsx" afterDir="false" />
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
->>>>>>> master
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -305,31 +294,7 @@
       <workItem from="1567029294796" duration="399000" />
       <workItem from="1567067882865" duration="4000" />
       <workItem from="1567093067279" duration="3988000" />
-<<<<<<< HEAD
-      <workItem from="1567098916883" duration="409000" />
-      <workItem from="1567152654173" duration="23000" />
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       <workItem from="1567098916883" duration="171000" />
-      <workItem from="1567257313838" duration="294000" />
-      <workItem from="1567257636045" duration="6396000" />
-      <workItem from="1567327594761" duration="173000" />
-      <workItem from="1567454192420" duration="3185000" />
-      <workItem from="1567457421112" duration="185000" />
-      <workItem from="1567458262067" duration="170000" />
-      <workItem from="1567497413509" duration="22142000" />
-      <workItem from="1567576729806" duration="74000" />
-      <workItem from="1567628043658" duration="31000" />
-      <workItem from="1568613036897" duration="3829000" />
-      <workItem from="1568622101444" duration="2636000" />
-      <workItem from="1569050242564" duration="53000" />
-      <workItem from="1569267886102" duration="57000" />
-      <workItem from="1569436477813" duration="825000" />
-      <workItem from="1569484802987" duration="10000" />
-      <workItem from="1570864275958" duration="9000" />
-      <workItem from="1572805250026" duration="202000" />
->>>>>>> master
     </task>
     <servers />
   </component>
