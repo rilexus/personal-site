@@ -33,7 +33,7 @@ const VisibleViewStyled = styled.div`
   //margin-bottom: -30px;
 `
 const ScrollView = ({ children }) => {
-  const scrollViewWidth = 1000
+  const scrollViewWidth = 1200
   return (
     <Wrapper>
       <VisibleViewStyled>
