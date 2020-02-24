@@ -39,6 +39,7 @@ const Header = ({  }: HeaderPropsI) => {
               <HeaderLogo />
             </div>
             <LinksWrapper>
+              <Link to={"/collaborations"}>Collaborations</Link>
               <Link to={"/contact"}>Contact</Link>
             </LinksWrapper>
           </Flex>

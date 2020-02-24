@@ -19,7 +19,7 @@ export const techIcons = [
   },
   {
     name: "Node.js",
-    width: 80,
+    width: 85,
     height: 55,
     url: "https://nodejs.org/en/",
     src:
