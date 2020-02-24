@@ -19,10 +19,8 @@ const SnapbusListElement = ({ imgSrc }) => {
       <ElemContentWrapper>
         <ContentH3>Snapbus</ContentH3>
         <ParagraphStyled>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
-          alias asperiores consequatur consequuntur corporis dolores, eaque est
-          ex iusto modi molestiae porro qui ratione recusandae repellendus sequi
-          temporibus, velit voluptatum?
+          Snapbus is a company based in Cologne which providers a easy way to
+          book transportation vehicles.
         </ParagraphStyled>
         <ExternalLink href={"https://www.snapbus.de/"}>Website</ExternalLink>
       </ElemContentWrapper>
