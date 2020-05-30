@@ -41,6 +41,7 @@ const Header = ({  }: HeaderPropsI) => {
             <LinksWrapper>
               <Link to={"/collaborations"}>Collaborations</Link>
               <Link to={"/contact"}>Contact</Link>
+              <Link to={"/blog/"}>Blog</Link>
             </LinksWrapper>
           </Flex>
         </HeaderContent>

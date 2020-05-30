@@ -32,11 +32,7 @@ const Layout = ({ children }: LayoutPropsI) => {
       }
     }
   `)
-  return (
-    <>
-      <StyledWrapper>{children}</StyledWrapper>
-    </>
-  )
+  return <StyledWrapper>{children}</StyledWrapper>
 }
 
 export default Layout

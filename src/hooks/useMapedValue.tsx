@@ -1,5 +1,6 @@
-import useScrollPosition from "./useScrollPosition"
+// import useScrollPosition from "./useScrollPosition"
 import * as eases from "eases"
+import { useEffect, useState } from "react"
 
 export enum EasingFunctionNames {
   backInOut,
@@ -35,6 +36,29 @@ export enum EasingFunctionNames {
   sineOut,
 }
 
+function useScrollPosition() {
+  const isClient = typeof document === "object"
+  const [scrollPosition, setScrollPosition] = useState(0)
+
+  useEffect(() => {
+    if (!isClient) return
+
+    function handleScrollPosition() {
+      const newPos = isClient
+        ? document.documentElement.scrollTop || document.body.scrollTop
+        : undefined
+      setScrollPosition(newPos)
+    }
+
+    window.addEventListener("scroll", handleScrollPosition)
+    return function clean() {
+      window.removeEventListener("scroll", handleScrollPosition)
+    }
+  }, []) // on mount && unmount
+
+  return scrollPosition
+}
+
 // linear interpolation
 // https://mattdesl.svbtle.com/linear-interpolation
 function lerp(startValue, endValue, t) {
@@ -53,6 +77,14 @@ function mapScrollPos(from: number, curr: number, to: number): number {
   return (curr - from) / (to - from)
 }
 
+/**
+ *
+ * @param { number } startValue
+ * @param { number } endValue
+ * @param { number } fromScrollPos - Position in px from which the mapping should start.
+ * @param { number } toScrollPos - Position in px at which the mapping should end.
+ * @param { EasingFunctionNames } easingFunctionName - Name of one easing function.
+ */
 export function useMapScrollToValue(
   startValue,
   endValue,

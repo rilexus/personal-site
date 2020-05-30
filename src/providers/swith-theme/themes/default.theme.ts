@@ -1,3 +1,5 @@
+import { black, blue } from "../../../themes/colors"
+import { deviceMediaQueries, MediaQueries } from "../../../themes/media-queries"
 
 export interface ThemePropsI {
   theme: ThemeI
@@ -17,17 +19,18 @@ export interface ThemeI {
   shadow:{
     prime: string;
     second: string;
-  }
+  },
+  media: MediaQueries
 }
 export const defaultTheme: ThemeI = {
   colors: {
-    prime: "#000000cc",
+    prime: black.prime,
     second: "#565656",
     third: "#7f7f7fcc",
-    accent: "rgb(0, 0, 238)",
+    accent: blue.main,
     text:{
-      prime:'#2d2d2d',
-      second: "#4c4c4c",
+      prime: black.second,
+      second: black.third,
     },
     border: "#ececec",
   },
@@ -35,4 +38,5 @@ export const defaultTheme: ThemeI = {
     prime: "0 3px 7px 0px #0000004d",
     second: "0 4px 13px 0px #0000004d",
   },
+  media: deviceMediaQueries
 }

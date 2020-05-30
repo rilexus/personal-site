@@ -1,5 +1,11 @@
+import { black, blue } from "./colors"
+import { text } from "./text"
+
+
 export const defaultTheme = {
   colors: {
-    blue: '#00f',
-  }
+    blue: blue,
+    black: black
+  },
+  text
 }
