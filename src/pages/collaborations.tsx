@@ -1,23 +1,19 @@
 import * as React from "react"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import Header from "../components/header/header"
 import PageTitle from "../components/page-title/page-title"
 import Layout from "../components/layout/layout"
 import H1 from "../components/H1/H1"
 import DropdownList from "../components/dropdown-list/DropdownList"
-import DropdownListElement from "../components/dropdown-list/dropdown-list-element/DropdownListElement"
-import { graphql } from "gatsby"
 import DunckelfeldListElement from "../page-components/collaborations/DunckelfeldListElement"
-import ElemHeader from "../page-components/collaborations/ElementHeader"
-import ElemContentWrapper from "../page-components/collaborations/ElementContentWrapper"
 import AmbientListElement from "../page-components/collaborations/AmbientListElement"
 import AvengaListElement from "../page-components/collaborations/AvengaListElement"
-import ContentH3 from "../page-components/collaborations/ContentH3"
-import { ParagraphStyled } from "../components/pragraph/pragraph.style"
-import { ExternalLink } from "../components/external-link/ExternalLink"
 import SnapbusListElement from "../page-components/collaborations/SnabbusListElement"
+import PrymListElement from "../page-components/collaborations/PrymListElement"
 
 const Collaborations = ({ data }) => {
+  const prym_logo = data.prym_logo.childImageSharp.fluid.src || ""
   const dunckelfeld_logo = data.dunkelfeld_logo.childImageSharp.fluid.src || ""
   const ambient_innovation_logo =
     data.ambient_innovation_logo.childImageSharp.fluid.src || ""
@@ -40,6 +36,7 @@ const Collaborations = ({ data }) => {
               <H1>Collaborations</H1>
 
               <DropdownList>
+                <PrymListElement imgSrc={prym_logo} />
                 <DunckelfeldListElement imgSrc={dunckelfeld_logo} />
                 <AmbientListElement imgSrc={ambient_innovation_logo} />
                 <AvengaListElement imgSrc={avenga_logo} />
@@ -55,6 +52,14 @@ const Collaborations = ({ data }) => {
 
 export const pageQuery = graphql`
   query IndexQuery {
+    prym_logo: file(relativePath: { eq: "prym_logo.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
     dunkelfeld_logo: file(relativePath: { eq: "dunckelfeld-logo.png" }) {
       childImageSharp {
         fluid {
