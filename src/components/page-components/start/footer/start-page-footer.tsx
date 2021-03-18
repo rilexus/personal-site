@@ -71,9 +71,7 @@ const StartPageFooter = ({  }: StartPageFooterPropsI) => {
                   {Icons.gitlab}
                 </IconLink>
                 <IconLink
-                  url={
-                    "https://www.linkedin.com/in/stanislav-panchenko-98b254192/"
-                  }
+                  url={"https://www.linkedin.com/in/stanislav-p-98b254192/"}
                 >
                   {Icons.linkedin}
                 </IconLink>

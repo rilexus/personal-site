@@ -32,7 +32,7 @@ export const techIcons = [
     width: 55,
     height: 55,
     url: "https://reactjs.org/",
-    src: "https://cdn.worldvectorlogo.com/logos/react.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     desc:
       "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded.",
   },
