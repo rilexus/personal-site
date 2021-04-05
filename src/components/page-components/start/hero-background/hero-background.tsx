@@ -26,7 +26,9 @@ const Styled = styled.div<{ opacity: number }>`
 const HeroBackground = () => {
   const animate = useSignal(1000)
   return (
-    <Styled opacity={animate ? 1 : 0}>
+    <Styled
+      opacity={animate ? 1 : 0}
+    >
       <BG />
     </Styled>
   )

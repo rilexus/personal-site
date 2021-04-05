@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { HeroHeadline } from "../../../hero-headline/hero-headline"
 import PageHeroTitle from "../../../page-hero-title/page-hero-title"
-import AppearAnimation from "../../../../animations/appear.animation"
+import AppearTransition from "../../../../transitions/Appear.transition"
 import styled from "styled-components"
 import useScrollPosition from "../../../../hooks/useScrollPosition"
 
@@ -77,7 +77,7 @@ const ScreenContent = () => {
           url={"https://media.giphy.com/media/3o6ZtrcBDLanIMbdRe/source.gif"}
         />
       </FadeinOnMount>
-      <AppearAnimation duration={1000} delay={1500}>
+      <AppearTransition duration={1000} delay={1500}>
         <div
           style={{
             marginTop: "40vh",
@@ -94,7 +94,7 @@ const ScreenContent = () => {
             It's almost art
           </HeroHeadline>
         </div>
-      </AppearAnimation>
+      </AppearTransition>
     </Wrapper>
   )
 }

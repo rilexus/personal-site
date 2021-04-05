@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled from "styled-components"
-import SlideUpAnimation from "../../../../animations/slide-up.animation"
-import FadeinAnimation from "../../../../animations/fadein.acnimation"
+import SlideUpTransition from "../../../../transitions/SlideUp.transition"
+import FadeinAnimation from "../../../../transitions/FadeIn.transition"
 import useScrollPosition from "../../../../hooks/useScrollPosition"
 import Layout from "../../../layout/layout"
 import Align from "../../../align/align"
@@ -26,9 +26,9 @@ const TitleWrapper = styled.div`
 const Title = ({ animate, children }) => {
   return (
     <FadeinAnimation animate={animate} duration={1000} delay={0}>
-      <SlideUpAnimation duration={1000} animate={animate} delay={0}>
+      <SlideUpTransition duration={1000} animate={animate} delay={0}>
         <TitleFontStyle>{children}</TitleFontStyle>
-      </SlideUpAnimation>
+      </SlideUpTransition>
     </FadeinAnimation>
   )
 }
@@ -39,9 +39,9 @@ const SubtitleFont = styled.div`
 const Subtitle = ({ animate, children }) => {
   return (
     <FadeinAnimation animate={animate} duration={1000} delay={800}>
-      <SlideUpAnimation duration={1000} animate={animate} delay={800}>
+      <SlideUpTransition duration={1000} animate={animate} delay={800}>
         <SubtitleFont>{children}</SubtitleFont>
-      </SlideUpAnimation>
+      </SlideUpTransition>
     </FadeinAnimation>
   )
 }
@@ -49,7 +49,7 @@ const Subtitle = ({ animate, children }) => {
 const Para = ({ animate }) => {
   return (
     <FadeinAnimation animate={animate} duration={1000} delay={1200}>
-      <SlideUpAnimation duration={1000} animate={animate} delay={1200}>
+      <SlideUpTransition duration={1000} animate={animate} delay={1200}>
         <div
           style={{
             marginTop: "20px",
@@ -59,7 +59,7 @@ const Para = ({ animate }) => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </IntroText>
         </div>
-      </SlideUpAnimation>
+      </SlideUpTransition>
     </FadeinAnimation>
   )
 }

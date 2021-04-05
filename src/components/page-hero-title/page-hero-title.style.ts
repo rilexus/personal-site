@@ -8,11 +8,12 @@ export const PageTitleStyled = styled.span`
   display: inline-block;
   
   background-image: url(${({url}:PropsI)=>url});
-  background-color: ${({url}:PropsI)=>url ? 'transparent' : 'black'}
   
-  background-clip: text;
   color: transparent;
+  background-color: ${({url}:PropsI)=>url ? 'transparent' : 'black'};
+  background-clip: text;
   -webkit-background-clip: text;
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

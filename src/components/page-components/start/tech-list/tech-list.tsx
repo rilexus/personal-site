@@ -1,6 +1,6 @@
 import * as React from "react"
 import styled from "styled-components"
-import posed, { PoseGroup } from "react-pose"
+import { PoseGroup } from "react-pose"
 import { useState } from "react"
 import { ParagraphStyled } from "../../../pragraph/pragraph.style"
 import { CenterMargin } from "../../../center-margin/center-margin.styled"
@@ -10,72 +10,50 @@ import {
   techIcons,
   TechScrollView,
 } from "./components/tech-scroll-view/tech-scroll-view"
-
-const Section = styled.section`
-  padding-bottom: 10vh;
-  padding-top: 10vh;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-`
+import { Section } from "../../../section/Section"
+import { FadeInTransition } from "./transitions/FadeIn.transition"
+import { Flex } from "../../../flex/Flex"
 
 const TechWrapper = styled.div`
   text-align: center;
 `
-
-const FadeInAnimation = posed.div({
-  init: {
-    opacity: 0,
-  },
-  enter: {
-    opacity: 1,
-    transition: () => ({
-      opacity: { duration: 700 },
-    }),
-  },
-  exit: {
-    opacity: 0,
-    transition: () => ({
-      opacity: { duration: 70 },
-    }),
-  },
-})
 
 export default function TechList(props) {
   const [hoveredIndex, setHoveredIndex] = useState(0)
   const currIconInfo = [techIcons[hoveredIndex]]
   return (
     <Section>
-      <TechWrapper>
-        <TechIntro />
-        <TechScrollView onMouseOver={setHoveredIndex} />
+      <Flex justify={"center"} align={"center"}>
+        <TechWrapper>
+          <TechIntro />
+          <TechScrollView onMouseOver={setHoveredIndex} />
 
-        <CenterMargin>
-          <div
-            style={{
-              margin: "0 35px",
-            }}
-          >
-            <Align position={"center"}>
-              <PoseGroup animateOnMount enterPose={"enter"}>
-                {currIconInfo.map(({ name, desc }, idx) => (
-                  <FadeInAnimation key={`curr-icon-${name}`}>
-                    <h3>{name}</h3>
-                    <ParagraphStyled
-                      style={{
-                        height: "200px",
-                      }}
-                    >
-                      {desc}
-                    </ParagraphStyled>
-                  </FadeInAnimation>
-                ))}
-              </PoseGroup>
-            </Align>
-          </div>
-        </CenterMargin>
-      </TechWrapper>
+          <CenterMargin>
+            <div
+              style={{
+                margin: "0 35px",
+              }}
+            >
+              <Align position={"center"}>
+                <PoseGroup animateOnMount enterPose={"enter"}>
+                  {currIconInfo.map(({ name, desc }, idx) => (
+                    <FadeInTransition key={`curr-icon-${name}`}>
+                      <h3>{name}</h3>
+                      <ParagraphStyled
+                        style={{
+                          height: "200px",
+                        }}
+                      >
+                        {desc}
+                      </ParagraphStyled>
+                    </FadeInTransition>
+                  ))}
+                </PoseGroup>
+              </Align>
+            </div>
+          </CenterMargin>
+        </TechWrapper>
+      </Flex>
     </Section>
   )
 }

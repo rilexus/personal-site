@@ -6,11 +6,12 @@ import Align from "../../../align/align"
 import { LetsChat } from "../../../../pages/contact"
 import Viewport from "../../../viewport/viewport"
 import styled from "styled-components"
-import FadeinAnimation from "../../../../animations/fadein.acnimation"
+import FadeinAnimation from "../../../../transitions/FadeIn.transition"
 import { useRef } from "react"
-import SlideUpAnimation from "../../../../animations/slide-up.animation"
+import SlideUpTransition from "../../../../transitions/SlideUp.transition"
 import { useAppearFromBottom } from "../../../../hooks/useAppearFromBottom"
 import Email from "../../../email/email"
+import { Section } from "../../../section/Section"
 
 const Gradient = styled.div`
   position: relative;
@@ -22,7 +23,7 @@ const LetsChatSection = () => {
   const ref = useRef()
   const inView = useAppearFromBottom(ref)
   return (
-    <section>
+    <Section>
       <FadeinAnimation duration={900} animate={inView}>
         <Gradient>
           <Viewport height={"50vh"}>
@@ -37,7 +38,11 @@ const LetsChatSection = () => {
                 }}
               >
                 <FadeinAnimation duration={900} animate={inView}>
-                  <SlideUpAnimation duration={700} animate={inView} delay={200}>
+                  <SlideUpTransition
+                    duration={700}
+                    animate={inView}
+                    delay={200}
+                  >
                     <LetsChat>Lets Chat!</LetsChat>
                     <CenterMargin>
                       <ParagraphStyled>
@@ -49,14 +54,14 @@ const LetsChatSection = () => {
                     <MainButton>
                       <Email />
                     </MainButton>
-                  </SlideUpAnimation>
+                  </SlideUpTransition>
                 </FadeinAnimation>
               </div>
             </Align>
           </Viewport>
         </Gradient>
       </FadeinAnimation>
-    </section>
+    </Section>
   )
 }
 

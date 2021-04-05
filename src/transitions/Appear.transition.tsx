@@ -8,7 +8,7 @@ interface AppearAnimationPropsI {
   style?: CSSProperties
 }
 
-const AppearAnimation = ({
+const AppearTransition = ({
   children,
   duration,
   delay,
@@ -33,4 +33,4 @@ const AppearAnimation = ({
   )
 }
 
-export default AppearAnimation
+export default AppearTransition

@@ -9,7 +9,7 @@ interface SlideUpAnimationPropsI {
   animate: boolean
   delay?: number
 }
-function SlideUpAnimation({
+function SlideUpTransition({
   animate,
   duration,
   children,
@@ -28,4 +28,4 @@ function SlideUpAnimation({
   )
 }
 
-export default SlideUpAnimation
+export default SlideUpTransition

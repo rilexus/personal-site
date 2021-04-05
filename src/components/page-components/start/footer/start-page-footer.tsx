@@ -6,6 +6,7 @@ import { CenterMargin } from "../../../center-margin/center-margin.styled"
 import { Icons } from "../../../../icons"
 import { IconLink } from "../../../icon-link"
 import Align from "../../../align/align"
+import { Section } from "../../../section/Section"
 
 const Background = styled.div<{ opacity?: number }>`
   background-color: #fbfcfd;
