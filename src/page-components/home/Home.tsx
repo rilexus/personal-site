@@ -42,6 +42,15 @@ const Wrapper = styled.div`
   transform: translate(-50%, 100%);
 `
 
+const GradientWrapper = styled.span`
+  background-color: transparent;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+`
+
 const ClipGradient = styled.h1`
   font-size: 7rem;
   margin: 0;
@@ -69,21 +78,14 @@ const Gradient = ({ children }) => {
     EasingFunctionNames.expoIn
   )
   return (
-    <span
+    <GradientWrapper
       style={{
-        opacity: mappedOpacityPosition,
-        display: "inline-block",
-        WebkitTextFillColor: "transparent",
         background: `linear-gradient(119deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) ${mappedGradientPosition}%, rgba(0, 0, 0, 0) 100%)`,
-
-        color: "transparent",
-        backgroundColor: "transparent",
-        backgroundClip: "text",
-        WebkitBackgroundClip: "text",
+        opacity: mappedOpacityPosition,
       }}
     >
       {children}
-    </span>
+    </GradientWrapper>
   )
 }
 const GradientTitle = ({ children }) => {
